@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Дмитрий Дудченко](https://up.htmlacademy.ru/adaptive/27/user/2200881).
+* Студент: [Артем Лабаури](https://htmlacademy.ru/profile/id1559805).
 * Наставник: [Микаел Магтесян](https://htmlacademy.ru/profile/id1100875).
 
 ---
