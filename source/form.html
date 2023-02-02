@@ -33,19 +33,19 @@
     <section class="form-section">
       <h1 class="form-title">Подбор программы</h1>
       <p class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="fields-form" action="https://echo.htmlacademy.ru">
-        <div class="fields-block">
+      <form class="fields-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="fields-block">
           <label class="fields-label" for="catname">Имя:*</label>
-          <input class="fields-textfields" type="text" id="catname" placeholder="БАРСИК">
-        </div>
-        <div class="fields-block">
+          <input class="fields-textfields" type="text" id="catname" name="catname" placeholder="Барсик">
+        </fieldset>
+        <fieldset class="fields-block">
           <label class="fields-label" for="weight">Вес (кг):*</label>
-          <input class="fields-textfields" type="text" id="weight" placeholder="7">
-        </div>
-        <div class="fields-block">
+          <input class="fields-textfields" type="text" id="weight" name="weight" placeholder="7">
+        </fieldset>
+        <fieldset class="fields-block">
           <label class="fields-label" for="age">Возраст (лет):</label>
-          <input class="fields-textfields" type="text" id="age" placeholder="7">
-        </div>
+          <input class="fields-textfields" type="text" id="age" name="age" placeholder="7">
+        </fieldset>
         <ul class="fields-list">
           <li class="fields-list__item">
             <input class="fields-list__program-input" type="radio" name="program" value="slim" id="slim" checked>
@@ -60,23 +60,19 @@
             <label class="fields-list__program-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
-        <div class="fields-contacts">
+        <fieldset class="fields-contacts">
           <h2 class="fields-contacts__title">Контактные данные (владельца кота)</h2>
-          <div class="fields-contacts__block">
             <label class="fields-contancts fields-label" for="email">E-mail:*</label>
             <input class="fields-contancts fields-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </div>
-          <div class="fields-contacts__block">
             <label class="fields-contancts fields-label" for="phone">Телефон:*</label>
             <input class="fields-contancts fields-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </div>
-        </div>
+        </fieldset>
         <div class="fields-comment">
           <h2 class="fields-comment__title">Комментарий</h2>
           <textarea class="fields-comment__textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
