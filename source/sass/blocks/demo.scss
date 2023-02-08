@@ -1,0 +1,42 @@
+.demo__title-text {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.demo__title-description {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $color;
+}
+
+.demo-stats {
+  display: flex;
+}
+
+.demo-stats__value {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.demo-stats__subtitle {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $color;
+}
+
+.demo-caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}

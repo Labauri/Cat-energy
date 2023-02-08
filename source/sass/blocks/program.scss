@@ -3,3 +3,40 @@
   padding: 22px;
   margin-top: 22px;
 }
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+}
+
+.program__text--slim {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  color: $color;
+}
+
+.program__text--pro {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  color: $color;
+}
+
+.program__catalog {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
