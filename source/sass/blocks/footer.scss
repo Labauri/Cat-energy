@@ -1,0 +1,25 @@
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__list {
+  display: flex;
+  padding-left: 94.5px;
+  padding-right: 94.5px;
+}
+
+.footer__list-item {
+  &:not(:nth-child(3)) {
+    padding-right: 24px;
+  }
+}
+
+.footer-block__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: $color;
+}
