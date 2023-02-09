@@ -1,5 +1,8 @@
 .contacts__block {
   display: flex;
+  width: 100%;
+  background-color: $grey-background;
+  padding-top: 26px;
 }
 
 .contacts__title {

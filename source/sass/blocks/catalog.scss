@@ -1,0 +1,94 @@
+.catalog__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__list-item {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 400px;
+
+  &:not(:nth-child(7)) {
+    padding-bottom: 86px;
+  }
+}
+
+.catalog__show-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  padding-top: 50px;
+}
+
+.catalog__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.catalog__subtext {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $color;
+}
+
+.catalog__show-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 94px;
+  width: 310px;
+  color: $color;
+}
+
+.catalog__list-button {
+  background-color: $main-green-color;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 109px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $grey-catalog-text;
+  width: 76px;
+  text-transform: uppercase;
+}
+
+.catalog__list-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding-right: 70px;
+}
+
+.catalog__list-value {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
