@@ -11,20 +11,20 @@
 }
 
 .add-product__subtext {
-  font-family: "Lato", sans-serif;
   @include font(14px, 14px, 400);
+  font-family: "Lato", sans-serif;
   padding-right: 120px;
   width: 100px;
   padding-bottom: 22px;
 }
 
 .add-product__button {
+  @include font(16px, 20px, 400);
   background-color: $main-green-color;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 109px;
   text-transform: uppercase;
-  @include font(16px, 20px, 400);
 }
 
 .add-product__gift {
@@ -44,8 +44,8 @@
 }
 
 .add-product__gift-text {
-  font-family: "Lato", sans-serif;
   @include font(16px, 20px, 400);
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: #ffffff;
   width: 160px;

@@ -11,6 +11,6 @@
 }
 
 .contacts__text {
-  font-family: "Lato", sans-serif;
   @include font(14px, 20px, 400);
+  font-family: "Lato", sans-serif;
 }

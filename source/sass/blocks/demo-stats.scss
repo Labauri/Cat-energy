@@ -9,8 +9,8 @@
 }
 
 .demo-stats__value {
-  font-family: "Lato", sans-serif;
   @include font(12px, 12px, 400);
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: $color-text;
 }

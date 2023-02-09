@@ -12,16 +12,16 @@
 }
 
 .program__text--slim {
-  font-family: "Lato", sans-serif;
   @include font(14px, 18px, 400);
+  font-family: "Lato", sans-serif;
   text-align: left;
   vertical-align: top;
   color: $color-text;
 }
 
 .program__text--pro {
-  font-family: "Lato", sans-serif;
   @include font(14px, 18px, 400);
+  font-family: "Lato", sans-serif;
   text-align: left;
   vertical-align: top;
   color: $color-text;

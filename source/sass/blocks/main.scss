@@ -36,8 +36,8 @@
 }
 
 .main__text {
-  color: #ffffff;
   @include font(14px, 14px, 400);
+  color: #ffffff;
   text-align: center;
   vertical-align: top;
 }

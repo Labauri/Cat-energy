@@ -30,8 +30,8 @@
 }
 
 .catalog__subtext {
-  font-family: "Lato", sans-serif;
   @include font(12px, 16px, 400);
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: $color-text;
 }
@@ -65,14 +65,14 @@
 }
 
 .catalog__list-title {
-  font-family: "Lato", sans-serif;
   @include font(12px, 16px, 400);
+  font-family: "Lato", sans-serif;
   text-align: center;
   padding-right: 70px;
 }
 
 .catalog__list-value {
-  font-family: "Lato", sans-serif;
   @include font(12px, 16px, 400);
+  font-family: "Lato", sans-serif;
   text-align: center;
 }
