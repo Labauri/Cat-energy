@@ -5,9 +5,7 @@
 }
 
 .program__title {
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
+  @include font(24px, 37px, 400);
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
@@ -15,27 +13,23 @@
 
 .program__text--slim {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px, 400);
   text-align: left;
   vertical-align: top;
-  color: $color;
+  color: $color-text;
 }
 
 .program__text--pro {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px, 400);
   text-align: left;
   vertical-align: top;
-  color: $color;
+  color: $color-text;
 }
 
 .program__catalog {
-  font-size: 16px;
-  line-height: 16px;
+  @include font(16px, 16px, 400);
+  color: $color-link;
   text-align: left;
   vertical-align: top;
   text-transform: uppercase;

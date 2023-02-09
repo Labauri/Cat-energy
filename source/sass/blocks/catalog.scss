@@ -1,7 +1,5 @@
 .catalog__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font(36px, 36px, 400);
 }
 
 .catalog__list-item {
@@ -25,9 +23,7 @@
 }
 
 .catalog__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 20px, 400);
   text-align: center;
   color: #111111;
   text-transform: uppercase;
@@ -35,42 +31,34 @@
 
 .catalog__subtext {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  @include font(12px, 16px, 400);
   text-align: center;
-  color: $color;
+  color: $color-text;
 }
 
 .catalog__show-button {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 20px, 400);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #f2f2f2;
+  background-color: $grey-background;
   border: none;
   padding: 10px 94px;
   width: 310px;
-  color: $color;
+  color: $color-text;
 }
 
 .catalog__list-button {
+  @include font(16px, 20px, 400);
   background-color: $main-green-color;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 109px;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .catalog__list-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 20px, 400);
   color: $grey-catalog-text;
   width: 76px;
   text-transform: uppercase;
@@ -78,17 +66,13 @@
 
 .catalog__list-title {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  @include font(12px, 16px, 400);
   text-align: center;
   padding-right: 70px;
 }
 
 .catalog__list-value {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  @include font(12px, 16px, 400);
   text-align: center;
 }

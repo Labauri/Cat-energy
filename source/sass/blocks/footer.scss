@@ -6,20 +6,12 @@
 
 .footer__list {
   display: flex;
-  padding-left: 94.5px;
-  padding-right: 94.5px;
+  padding-left: 94px;
+  padding-right: 94px;
 }
 
 .footer__list-item {
-  &:not(:nth-child(3)) {
+  &:not(:last-child) {
     padding-right: 24px;
   }
-}
-
-.footer-block__text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.2px;
-  color: $color;
 }

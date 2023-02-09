@@ -1,8 +1,7 @@
 .page__body {
   min-width: 320px;
   margin: 0;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px, 400);
   font-family: "Oswald", sans-serif;
   color: #000000;
   background-color: #ffffff;

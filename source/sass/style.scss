@@ -1,12 +1,16 @@
 @import "fonts.scss";
 @import "global.scss";
 @import "variables.scss";
+@import "mixin.scss";
 @import "blocks/main.scss";
 @import "blocks/page.scss";
 @import "blocks/program.scss";
 @import "blocks/instruction.scss";
 @import "blocks/demo.scss";
+@import "blocks/demo-stats.scss";
+@import "blocks/demo-caption.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
+@import "blocks/footer-container.scss";
 @import "blocks/catalog.scss";
 @import "blocks/add-product.scss";
