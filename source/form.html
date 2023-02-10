@@ -35,7 +35,7 @@
       <h1 class="form-title">Подбор программы</h1>
       <p class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="fields-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="fields-block">
+        <fieldset class="fields-container">
           <label class="fields-label" for="catname">Имя:*</label>
             <input class="fields-textfields" type="text" id="catname" name="catname" placeholder="Барсик">
           <label class="fields-label" for="weight">Вес (кг):*</label>
@@ -93,8 +93,10 @@
             <label class="fields-list__add-label" for="vitamins" tabindex="0">Витамины</label>
           </li>
         </ul>
-        <button class="fields-button" type="submit">Отправить заявку</button>
-        <span class="fields-note">* — Обязательные поля</span>
+        <div class="fields-application">
+          <button class="fields-application__button" type="submit">Отправить заявку</button>
+          <span class="fields-application__note">* — Обязательные поля</span>
+        </div>
       </form>
     </section>
     <section class="contacts">

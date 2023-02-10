@@ -1,0 +1,8 @@
+.form-title {
+  @include font(36px, 36px, 400);
+}
+
+.form-text {
+  @include font(14px, 18px, 400);
+  width: 226px;
+}
