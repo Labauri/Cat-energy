@@ -1,28 +1,9 @@
-.main-nav__list {
-  display: flex;
-  gap: 15px;
-}
-
-.main__promo {
-  position: relative;
-  background-image: url("../img/index-background.jpg");
+.main__promo--background {
+  background: url("/img/index-background.jpg");
+  background-size: 100% 305px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 400px 305px;
-  background-position: calc(100% + 70px) 0;
-  padding-bottom: 0;
-  padding-top: 144px;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 68%;
-    background-color: $main-green-color;
-    opacity: 0.8;
-    z-index: 1;
-    display: none;
-  }
+  position: absolute;
 }
 
 .main__blocks {
