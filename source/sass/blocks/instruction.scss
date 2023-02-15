@@ -1,0 +1,22 @@
+.instruction__title {
+  @include font(36px, 40px, 400);
+  text-align: center;
+  vertical-align: top;
+}
+
+.instruction__list {
+  width: 279px;
+}
+
+.instruction__image {
+  background-color: $main-green-color;
+  padding: 15px 14px;
+}
+
+.instruction__description {
+  @include font(14px, 18px, 400);
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  vertical-align: top;
+  color: $color-text;
+}

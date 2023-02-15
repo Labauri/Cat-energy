@@ -1,0 +1,5 @@
+.footer-container__text {
+  @include font(16px, 19px, 400);
+  font-family: "Lato", sans-serif;
+  color: $color-text;
+}

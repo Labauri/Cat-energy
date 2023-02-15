@@ -1,0 +1,36 @@
+.program-list__item {
+  background-color: $grey-background;
+  padding: 22px;
+  margin-top: 22px;
+}
+
+.program__title {
+  @include font(24px, 37px, 400);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+}
+
+.program__text--slim {
+  @include font(14px, 18px, 400);
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  vertical-align: top;
+  color: $color-text;
+}
+
+.program__text--pro {
+  @include font(14px, 18px, 400);
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  vertical-align: top;
+  color: $color-text;
+}
+
+.program__catalog {
+  @include font(16px, 16px, 400);
+  color: $color-link;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}

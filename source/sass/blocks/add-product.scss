@@ -1,0 +1,53 @@
+.add-product__title {
+  @include font(24px, 24px, 400);
+  text-align: center;
+}
+
+.add-product__subtitle {
+  @include font(16px, 16px, 400);
+  text-transform: uppercase;
+  color: #222222;
+  padding-top: 32px;
+}
+
+.add-product__subtext {
+  @include font(14px, 14px, 400);
+  font-family: "Lato", sans-serif;
+  padding-right: 120px;
+  width: 100px;
+  padding-bottom: 22px;
+}
+
+.add-product__button {
+  @include font(16px, 20px, 400);
+  background-color: $main-green-color;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 109px;
+  text-transform: uppercase;
+}
+
+.add-product__gift {
+  text-align: center;
+  width: 280px;
+  height: 290px;
+  margin-top: 55px;
+  background-image: url("../img/catalog-gift-background.png");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product__gift-text {
+  @include font(16px, 20px, 400);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  width: 160px;
+  padding-top: 20px;
+}

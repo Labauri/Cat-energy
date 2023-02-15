@@ -1,0 +1,16 @@
+.demo-stats {
+  display: flex;
+}
+
+.demo-stats__subtitle {
+  @include font(24px, 24px, 400);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.demo-stats__value {
+  @include font(12px, 12px, 400);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: $color-text;
+}
