@@ -65,7 +65,6 @@
   color: #000000;
   visibility: hidden;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
 .main-nav__list-item {
@@ -75,5 +74,19 @@
   text-align: center;
   padding-top: 22px;
   padding-bottom: 25px;
-  transition: all 0.3s ease;
+  transition: height 0.5s, opacity 1s;
+}
+
+@include tablet {
+  .main-nav--humburger,
+  .main-nav__menu-toggle,
+  .main-nav__menu-button {
+    display: none;
+  }
+}
+
+@include tablet {
+  .main-nav__list-item {
+    display: block;
+  }
 }
