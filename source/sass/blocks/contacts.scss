@@ -5,12 +5,42 @@
   padding-top: 26px;
 }
 
+.contacts__map {
+  background: url("/img/location-map.jpg") no-repeat;
+  background-size: 320px 362px;
+  height: 362px;
+}
+
+@include tablet {
+  .contacts__map {
+    background: url("/img/location-map.jpg") no-repeat;
+    background-size: 768px 396px;
+    height: 396px;
+  }
+}
+
 .contacts__title {
   @include font(16px, 20px, 400);
   text-transform: uppercase;
 }
 
+@include tablet {
+  .contacts__title {
+    @include font(20px, 26px, 400);
+    width: 171px;
+  }
+}
+
 .contacts__text {
   @include font(14px, 20px, 400);
   font-family: "Lato", sans-serif;
+}
+
+@include tablet {
+  .contacts__text {
+    @include font(16px, 20px, 400);
+    font-family: "Lato", sans-serif;
+    width: 160px;
+    text-align: right;
+  }
 }

@@ -1,7 +1,39 @@
 .program-list__item {
   background-color: $grey-background;
   padding: 22px;
-  margin-top: 22px;
+
+  &:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+
+@include desktop {
+  .program-list__item:not(:first-child) {
+    margin: 0px;
+  }
+}
+
+@include desktop {
+  .program-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    margin-right: 110px;
+    width: 570px;
+    gap: 80px;
+  }
+}
+
+@include tablet {
+  .program-list__item {
+    min-height: 372px;
+  }
+}
+
+@include desktop {
+  .program-list__item {
+    min-height: 374px;
+  }
 }
 
 .program__title {
@@ -9,6 +41,22 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
+}
+
+@include tablet {
+  .program__title {
+    @include font(36px, 36px, 400);
+    float: left;
+    order: 3;
+  }
+}
+
+@include desktop {
+  .program__title {
+    @include font(36px, 36px, 400);
+    text-align: right;
+    order: 2;
+  }
 }
 
 .program__text--slim {
@@ -19,6 +67,24 @@
   color: $color-text;
 }
 
+@include tablet {
+  .program__text--slim {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+    order: 2;
+    width: 340px;
+  }
+}
+
+@include desktop {
+  .program__text--slim {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+    order: 3;
+    width: 457px;
+  }
+}
+
 .program__text--pro {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
@@ -27,10 +93,60 @@
   color: $color-text;
 }
 
+@include tablet {
+  .program__text--pro {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+    order: 2;
+    width: 340px;
+  }
+}
+
+@include desktop {
+  .program__text--pro {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+    order: 3;
+    width: 457px;
+  }
+}
+
 .program__catalog {
   @include font(16px, 16px, 400);
   color: $color-link;
   text-align: left;
   vertical-align: top;
   text-transform: uppercase;
+}
+
+@include tablet {
+  .program-list__icon {
+    width: 200px;
+    height: 211px;
+    order: 1;
+  }
+}
+
+@include desktop {
+  .program-list__icon {
+    width: 100px;
+    height: 106px;
+    order: 1;
+  }
+}
+
+@include tablet {
+  .program__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    gap: 25px;
+  }
+}
+
+@include tablet {
+  .program-catalog {
+    @include font(20px, 30px, 400);
+  }
 }

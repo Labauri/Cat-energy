@@ -4,8 +4,19 @@
 
 @include tablet {
   .main-header {
-    width: 100%;
+    border: none;
+    background: url("/img/logo-tablet.svg") no-repeat;
+    margin: 0;
+    padding: 0;
     display: flex;
+    align-items: center;
+  }
+}
+
+@include desktop {
+  .main-header {
+    background: url("/img/logo-desktop.svg") no-repeat 110px 33px;
+    position: absolute;
   }
 }
 
@@ -18,13 +29,27 @@
   max-width: 190px;
   width: 100%;
   height: 65px;
-  transition: 0.3s;
+  transition: all 0.3s;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+@include tablet {
+  .main-header__container {
+    margin-right: 31px;
+    margin-left: 31px;
+  }
 }
 
 .main-header__logo-text {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@include tablet {
+  .main-header__logo,
+  .main-header__logo-text {
+    display: none;
+  }
 }

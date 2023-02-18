@@ -1,61 +1,3 @@
-.main-nav__menu-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 32px;
-  left: 255px;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    top: -8px;
-  }
-
-  &::after {
-    content: "";
-    top: 8px;
-  }
-}
-
-.main-nav__menu-button,
-.main-nav__menu-button::before,
-.main-nav__menu-button::after {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 24px;
-  background-color: $color-link;
-  transition: all 0.3s ease;
-}
-
-.main-nav__menu-toggle {
-  display: none;
-  transition: all 0.3s ease;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  &:checked ~ .main-nav__menu-button {
-    transform: rotate(45deg);
-  }
-
-  &:checked ~ .main-nav__menu-button::before {
-    top: 0;
-    transform: rotate(0);
-  }
-
-  &:checked ~ .main-nav__menu-button::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  &:checked ~ .main-nav__list {
-    visibility: visible;
-    left: 0;
-  }
-}
-
 .main-nav__list {
   @include font(20px, 20px, 500);
   padding: 0;
@@ -78,15 +20,27 @@
 }
 
 @include tablet {
-  .main-nav--humburger,
-  .main-nav__menu-toggle,
-  .main-nav__menu-button {
+  .main-nav__toggle {
     display: none;
   }
 }
 
 @include tablet {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+}
+
+@include tablet {
   .main-nav__list-item {
+    @include font(18px, 24px, 400);
+    color: $color-link;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
     display: block;
   }
 }

@@ -3,9 +3,45 @@
   text-align: left;
 }
 
+@include tablet {
+  .demo__title-text {
+    @include font(60px, 60px, 400);
+  }
+}
+
 .demo__title-description {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
   text-align: center;
   color: $color-text;
+}
+
+@include tablet {
+  .demo__title-description {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+    width: 708px;
+  }
+}
+
+@include tablet {
+  .demo-stats__value {
+    @include font(30px, 37px, 400);
+    text-align: center;
+    order: 2;
+  }
+}
+
+@include tablet {
+  .demo-stats__subtitle {
+    @include font(14px, 14px, 400);
+    font-family: "Lato", sans-serif;
+    order: 1;
+  }
+}
+
+@include tablet {
+  .demo-caption {
+    @include font(20px, 20px, 400);
+  }
 }
