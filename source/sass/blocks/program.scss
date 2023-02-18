@@ -9,7 +9,7 @@
 
 @include desktop {
   .program-list__item:not(:first-child) {
-    margin: 0px;
+    margin: 0;
   }
 }
 
