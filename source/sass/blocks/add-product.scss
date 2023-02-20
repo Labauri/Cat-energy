@@ -1,6 +1,21 @@
+@include tablet {
+  .add-product__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
 .add-product__title {
   @include font(24px, 24px, 400);
   text-align: center;
+}
+
+@include tablet {
+  .add-product__title {
+    @include font(36px, 36px, 400);
+    text-align: left;
+  }
 }
 
 .add-product__subtitle {
@@ -10,12 +25,25 @@
   padding-top: 32px;
 }
 
+@include tablet {
+  .add-product__subtitle {
+    @include font(20px, 20px, 400);
+  }
+}
+
 .add-product__subtext {
   @include font(14px, 14px, 400);
   font-family: "Lato", sans-serif;
   padding-right: 120px;
   width: 100px;
   padding-bottom: 22px;
+}
+
+@include tablet {
+  .add-product__subtext {
+    @include font(16px, 20px, 400);
+    font-family: "Lato", sans-serif;
+  }
 }
 
 .add-product__button {

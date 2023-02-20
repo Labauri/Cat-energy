@@ -1,3 +1,11 @@
+@include desktop {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
 .main-nav__list {
   @include font(20px, 20px, 500);
   padding: 0;
@@ -5,8 +13,27 @@
   display: block;
   text-transform: uppercase;
   color: #000000;
-  visibility: hidden;
   text-align: center;
+}
+
+@include tablet {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    color: $color-link;
+    text-transform: uppercase;
+  }
+}
+
+@include desktop {
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
 
 .main-nav__list-item {
@@ -20,27 +47,22 @@
 }
 
 @include tablet {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@include tablet {
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
-  }
-}
-
-@include tablet {
   .main-nav__list-item {
     @include font(18px, 24px, 400);
-    color: $color-link;
-    text-transform: uppercase;
     border: none;
     text-decoration: none;
-    display: block;
+    color: $color-link;
+  }
+}
+
+@include desktop {
+  .main-nav__list-item {
+    display: flex;
+  }
+}
+
+@include tablet {
+  .main-nav__toggle {
+    display: none;
   }
 }

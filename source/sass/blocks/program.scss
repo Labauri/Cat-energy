@@ -19,7 +19,6 @@
     flex-direction: row;
     margin-left: 110px;
     margin-right: 110px;
-    width: 570px;
     gap: 80px;
   }
 }
@@ -32,7 +31,7 @@
 
 @include desktop {
   .program-list__item {
-    min-height: 374px;
+    width: 570px;
   }
 }
 
@@ -46,7 +45,7 @@
 @include tablet {
   .program__title {
     @include font(36px, 36px, 400);
-    float: left;
+    text-align: left;
     order: 3;
   }
 }
@@ -54,8 +53,9 @@
 @include desktop {
   .program__title {
     @include font(36px, 36px, 400);
-    text-align: right;
+    text-align: center;
     order: 2;
+    float: none;
   }
 }
 
@@ -121,7 +121,6 @@
 
 @include tablet {
   .program-list__icon {
-    width: 200px;
     height: 211px;
     order: 1;
   }
@@ -129,7 +128,6 @@
 
 @include desktop {
   .program-list__icon {
-    width: 100px;
     height: 106px;
     order: 1;
   }
