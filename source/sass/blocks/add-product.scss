@@ -21,7 +21,7 @@
 .add-product__subtitle {
   @include font(16px, 16px, 400);
   text-transform: uppercase;
-  color: #222222;
+  color: $grey-catalog-text;
   padding-top: 32px;
 }
 
