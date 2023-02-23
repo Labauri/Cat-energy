@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+@include tablet {
+  .fields-application {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
 .fields-application__button {
   @include font(16px, 20px, 400);
   background-color: $main-green-color;
@@ -13,6 +22,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 21px;
+  margin-right: 64px;
 }
 
 .fields-application__note {

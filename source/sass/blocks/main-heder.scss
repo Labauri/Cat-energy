@@ -5,7 +5,7 @@
 @include tablet {
   .main-header {
     border: none;
-    background: url("/img/logo-tablet.svg") no-repeat;
+    background: url("/img/logo-tablet.svg") no-repeat 30px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,6 +20,21 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@include desktop {
+  .main-header__position {
+    position: static;
+  }
+}
+
+@include desktop {
+  .main-header__position-form {
+    position: static;
   }
 }
 
@@ -41,6 +56,13 @@
   .main-header__container {
     margin-right: 31px;
     margin-left: 31px;
+    display: none;
+  }
+}
+
+@include desktop {
+  .main-header__container {
+    display: none;
   }
 }
 

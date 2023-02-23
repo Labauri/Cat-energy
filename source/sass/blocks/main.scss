@@ -1,6 +1,6 @@
 .main__promo {
   background: url("/img/index-background.jpg");
-  background-size: 100% 305px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -19,11 +19,6 @@
   .main__promo {
     background: url("/img/index-background-desktop.png") no-repeat right top;
     position: relative;
-
-    &::after {
-      background-color: #68b738;
-      position: absolute;
-    }
   }
 }
 
