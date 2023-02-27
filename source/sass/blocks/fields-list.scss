@@ -3,6 +3,13 @@
   margin: 20px 0 0;
 }
 
+@include desktop {
+  .fields-list {
+    min-width: 50%;
+    height: 100%;
+  }
+}
+
 .fields-list__item {
   padding-top: 6px;
   margin-bottom: 12px;

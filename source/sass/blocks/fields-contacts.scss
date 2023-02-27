@@ -16,11 +16,27 @@
   border: none;
 }
 
+@include desktop {
+  .fields-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
 .fields-contacts__block {
   display: flex;
   position: relative;
   align-items: center;
   margin-bottom: 15px;
+}
+
+@include desktop {
+  .fields-contacts__block {
+    width: 50%;
+    margin-right: 78px;
+    margin-left: 51px;
+  }
 }
 
 .fields-contacts__input {

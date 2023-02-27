@@ -16,7 +16,7 @@
 @include desktop {
   .main-header {
     background: url("/img/logo-desktop.svg") no-repeat 110px 33px;
-    padding-top: 40px;
+    padding-top: 24px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -56,12 +56,6 @@
   .main-header__container {
     margin-right: 31px;
     margin-left: 31px;
-    display: none;
-  }
-}
-
-@include desktop {
-  .main-header__container {
     display: none;
   }
 }

@@ -8,6 +8,22 @@
   }
 }
 
+.fields-add {
+  border: none;
+}
+
+@include desktop {
+  .fields-add {
+    display: flex;
+  }
+}
+
+@include desktop {
+  .fields-list__item {
+    width: 100%;
+  }
+}
+
 .fields-list__add-label {
   @include font(16px, 18px, 400);
   text-transform: uppercase;

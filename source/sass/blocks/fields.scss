@@ -1,11 +1,26 @@
-.fields-container {
+.fields {
   border: none;
+  max-width: 50%;
 }
 
 .fields-block {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+
+@include desktop {
+  .fields-block {
+    display: flex;
+  }
+}
+
+@include desktop {
+  .fields-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .fields-label {
