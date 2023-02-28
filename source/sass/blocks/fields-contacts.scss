@@ -1,9 +1,77 @@
 .fields-contacts__title {
   @include font(24px, 26px, 400);
+  width: 187px;
 }
 
-.fields-contancts {
+@include tablet {
+  .fields-contacts__title {
+    @include font(36px, 36px, 400);
+    width: 512px;
+    padding-top: 71px;
+    padding-bottom: 76px;
+  }
+}
+
+.fields-contacts {
+  border: none;
+}
+
+@include desktop {
+  .fields-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.fields-contacts__block {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+@include desktop {
+  .fields-contacts__block {
+    width: 50%;
+    margin-right: 78px;
+    margin-left: 51px;
+  }
+}
+
+.fields-contacts__input {
   @include font(16px, 18px, 400);
   color: $grey-catalog-text;
   text-transform: uppercase;
+  padding: 12px 15px;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  padding-right: 50px;
+}
+
+@include tablet {
+  .fields-contacts__input {
+    @include font(20px, 30px, 400);
+  }
+}
+
+.fields-contacts__label {
+  @include font(16px, 18px, 400);
+  color: $grey-catalog-text;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+@include tablet {
+  .fields-contacts__label {
+    @include font(20px, 30px, 400);
+  }
+}
+
+.fields-contacts__icon {
+  position: absolute;
+  padding-left: 10px;
+  top: 12px;
+  right: 16px;
 }

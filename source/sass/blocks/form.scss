@@ -1,8 +1,34 @@
+.form-main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@include tablet {
+  .form-main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .form-title {
   @include font(36px, 36px, 400);
+}
+
+@include tablet {
+  .form-title {
+    @include font(60px, 60px, 400);
+  }
 }
 
 .form-text {
   @include font(14px, 18px, 400);
   width: 226px;
+  text-transform: uppercase;
+}
+
+@include tablet {
+  .form-text {
+    @include font(20px, 30px, 400);
+    width: 323px;
+  }
 }

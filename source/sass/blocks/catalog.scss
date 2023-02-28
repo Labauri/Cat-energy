@@ -2,6 +2,37 @@
   @include font(36px, 36px, 400);
 }
 
+@include tablet {
+  .catalog__title {
+    @include font(60px, 60px, 400);
+  }
+}
+
+@include desktop {
+  .catalog__title {
+    @include font(60px, 60px, 400);
+    margin-top: 61px;
+    padding-top: 0;
+    margin-bottom: 27px;
+  }
+}
+
+@include tablet {
+  .catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@include tablet {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    margin-right: -90px;
+  }
+}
+
 .catalog__list-item {
   display: flex;
   gap: 40px;
@@ -10,6 +41,18 @@
 
   &:not(:nth-child(7)) {
     padding-bottom: 86px;
+  }
+}
+
+@include tablet {
+  .catalog__list-item {
+    background-color: $grey-background;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -64,15 +107,63 @@
   text-transform: uppercase;
 }
 
-.catalog__list-title {
+.catalog__list-table__item {
   @include font(12px, 16px, 400);
   font-family: "Lato", sans-serif;
   text-align: center;
+  vertical-align: middle;
   padding-right: 70px;
 }
 
-.catalog__list-value {
-  @include font(12px, 16px, 400);
-  font-family: "Lato", sans-serif;
-  text-align: center;
+@include tablet {
+  .catalog__list-table__item {
+    @include font(16px, 16px, 400);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    text-align: right;
+  }
+}
+
+@include tablet {
+  .catalog__list-table--title {
+    text-align: left;
+  }
+}
+
+@include tablet {
+  .catalog__list-table--value {
+    text-align: right;
+  }
+}
+
+@include tablet {
+  .catalog__show-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin-bottom: 60px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@include tablet {
+  .catalog__subtitle {
+    @include font(20px, 22px, 400);
+  }
+}
+
+@include tablet {
+  .catalog__subtext {
+    @include font(16px, 18px, 400);
+    font-family: "Lato", sans-serif;
+  }
+}
+
+@include tablet {
+  .catalog__show-button {
+    padding: 20px 79px;
+  }
 }

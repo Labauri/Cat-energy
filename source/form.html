@@ -6,7 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header__position-form">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
         <img src="img/logo-mobile.svg" width="33" height="37" alt="Лого Кота-Энерджи">
@@ -15,24 +15,21 @@
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовое Лого Кота-Энерджи">
       </a>
     </div>
-    <nav class="main-nav main-nav--open">
-      <div class="main-nav main-nav--humburger">
-        <input class="main-nav__menu-toggle" id="menu__toggle" type="checkbox"/>
-        <label class="main-nav__menu-button" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--current">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="catalog.html">Каталог Продукции</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a class="main-nav_list-link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav_list-link" href="catalog.html">Каталог Продукции</a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--current">
+          <a class="main-nav_list-link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="form-main">
@@ -40,40 +37,52 @@
       <h1 class="form-title">Подбор программы</h1>
       <p class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="fields-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="fields-container">
-          <label class="fields-label" for="catname">Имя:*</label>
-            <input class="fields-textfields" type="text" id="catname" name="catname" placeholder="Барсик">
-          <label class="fields-label" for="weight">Вес (кг):*</label>
-            <input class="fields-textfields" type="text" id="weight" name="weight" placeholder="7">
-          <label class="fields-label" for="age">Возраст (лет):</label>
-            <input class="fields-textfields" type="text" id="age" name="age" placeholder="7">
-        </fieldset>
-        <ul class="fields-list">
-          <li class="fields-list__item">
-            <input class="fields-list__program-input" type="radio" name="program" value="slim" id="slim" checked>
-            <label class="fields-list__program-label" for="slim" tabindex="0">Похудение</label>
-          </li>
-          <li class="fields-list__item">
-            <input class="fields-list__program-input" type="radio" name="program" value="mass" id="mass">
-            <label class="fields-list__program-label" for="mass" tabindex="0">Набор массы</label>
-          </li>
-          <li class="fields-list__item">
-            <input class="fields-list__program-input" type="radio" name="program" value="advice" id="advice">
-            <label class="fields-list__program-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+        <div class="fields-container">
+          <fieldset class="fields">
+            <div class="fields-block">
+              <label class="fields-label" for="catname">Имя:*</label>
+              <input class="fields-textfields" type="text" id="catname" name="catname" placeholder="Барсик">
+            </div>
+            <div class="fields-block">
+              <label class="fields-label" for="weight">Вес (кг):*</label>
+              <input class="fields-textfields" type="text" id="weight" name="weight" placeholder="7">
+            </div>
+            <div class="fields-block">
+              <label class="fields-label" for="age">Возраст (лет):</label>
+              <input class="fields-textfields" type="text" id="age" name="age" placeholder="7">
+            </div>
+          </fieldset>
+          <ul class="fields-list">
+            <li class="fields-list__item">
+              <input class="fields-list__program-input" type="radio" name="program" value="slim" id="slim" checked>
+              <label class="fields-list__program-label" for="slim" tabindex="0">Похудение</label>
+            </li>
+            <li class="fields-list__item">
+              <input class="fields-list__program-input" type="radio" name="program" value="mass" id="mass">
+              <label class="fields-list__program-label" for="mass" tabindex="0">Набор массы</label>
+            </li>
+            <li class="fields-list__item">
+              <input class="fields-list__program-input" type="radio" name="program" value="advice" id="advice">
+              <label class="fields-list__program-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
         <fieldset class="fields-contacts">
           <legend class="fields-contacts__title">Контактные данные (владельца кота)</legend>
-            <label class="fields-contancts fields-label" for="email">E-mail:*</label>
-              <input class="fields-contancts fields-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="fields-contacts__block">
+            <label class="fields-contacts__label" for="email">E-mail:*</label>
+            <input class="fields-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+            <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <label class="fields-contancts fields-label" for="phone">Телефон:*</label>
-              <input class="fields-contancts fields-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </div>
+          <div class="fields-contacts__block">
+            <label class="fields-contacts__label" for="phone">Телефон:*</label>
+            <input class="fields-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+            <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+          </div>
         </fieldset>
         <fieldset class="fields-comment">
           <legend class="fields-comment__title">Комментарий</legend>
@@ -81,7 +90,7 @@
         </fieldset>
         <h2 class="fields-title fields-add">Дополнительно</h2>
         <ul class="fields-list fields-add">
-          <li class="fields-list__item fields-add">
+          <li class="fields-list__item fields-add__item">
             <input class="fields-list__add-input" type="checkbox" name="product" value="sweetener" id="sweetener" checked>
             <label class="fields-list__add-label" for="sweetener" tabindex="0">Сахарозаменитель</label>
           </li>
@@ -109,7 +118,7 @@
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
         <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <img class="contacts__map" src="img/location-map.jpg" width="320px" height="362px" alt="Карта">
+      <div class="contacts__map" id="map"></div>
     </section>
   </main>
   <footer class="footer">

@@ -1,58 +1,16 @@
-.main-nav__menu-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 32px;
-  left: 255px;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    top: -8px;
-  }
-
-  &::after {
-    content: "";
-    top: 8px;
+@include tablet {
+  .main-nav {
+    padding-top: 5px;
+    padding-left: 20px;
   }
 }
 
-.main-nav__menu-button,
-.main-nav__menu-button::before,
-.main-nav__menu-button::after {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 24px;
-  background-color: $color-link;
-  transition: all 0.3s ease;
-}
-
-.main-nav__menu-toggle {
-  display: none;
-  transition: all 0.3s ease;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  &:checked ~ .main-nav__menu-button {
-    transform: rotate(45deg);
-  }
-
-  &:checked ~ .main-nav__menu-button::before {
-    top: 0;
-    transform: rotate(0);
-  }
-
-  &:checked ~ .main-nav__menu-button::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-
-  &:checked ~ .main-nav__list {
-    visibility: visible;
-    left: 0;
+@include desktop {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
   }
 }
 
@@ -63,17 +21,83 @@
   display: block;
   text-transform: uppercase;
   color: #000000;
-  visibility: hidden;
   text-align: center;
-  transition: all 0.3s ease;
+}
+
+@include tablet {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    color: $color-link;
+    text-transform: uppercase;
+    margin-left: 250px;
+  }
+}
+
+@include desktop {
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 110px;
+  }
 }
 
 .main-nav__list-item {
   display: block;
   border-top: 1px solid #e6e6e6;
-  text-decoration: none;
   text-align: center;
   padding-top: 22px;
   padding-bottom: 25px;
-  transition: all 0.3s ease;
+  transition: height 0.5s, opacity 1s;
+}
+
+@include tablet {
+  .main-nav__list-item {
+    @include font(18px, 24px, 400);
+    border: none;
+  }
+}
+
+@include desktop {
+  .main-nav__list-item {
+    display: flex;
+  }
+}
+
+.main-nav_list-link {
+  @include font(20px, 20px, 400);
+  text-decoration: none;
+  color: $color-link;
+}
+
+@include tablet {
+  .main-nav_list-link {
+    @include font(18px, 24px, 400);
+    text-decoration: none;
+    color: $color-link;
+  }
+}
+
+@include desktop {
+  .main-nav_list-link {
+    @include font(20px, 40px, 400);
+    text-decoration: none;
+    color: $color-link;
+  }
+}
+
+@include desktop {
+  .main-nav_list-link--white {
+    color: #ffffff;
+  }
+}
+
+@include tablet {
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -1,14 +1,37 @@
-.main__promo--background {
+.main__promo {
   background: url("/img/index-background.jpg");
-  background-size: 100% 305px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+}
+
+@include tablet {
+  .main__promo {
+    background: url("/img/index-cat-tablet.png") no-repeat;
+    background-position: center 217px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 400px;
+  }
+}
+
+@include desktop {
+  .main__promo {
+    background: url("/img/index-background-desktop.png") no-repeat right top;
+    position: relative;
+  }
 }
 
 .main__blocks {
   padding-right: 20px;
   padding-left: 20px;
+}
+
+@include tablet {
+  .main__blocks {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
 }
 
 .main__title {
@@ -18,6 +41,23 @@
   vertical-align: top;
 }
 
+@include tablet {
+  .main__title {
+    @include font(60px, 60px, 400);
+    color: $color-link;
+    width: 415px;
+    text-transform: none;
+  }
+}
+
+@include desktop {
+  .main__title {
+    @include font(60px, 60px, 400);
+    color: $color-link;
+    text-transform: none;
+  }
+}
+
 .main__text {
   @include font(14px, 14px, 400);
   color: #ffffff;
@@ -25,8 +65,31 @@
   vertical-align: top;
 }
 
+@include tablet {
+  .main__text {
+    @include font(20px, 20px, 400);
+    color: $color-link;
+    text-transform: uppercase;
+  }
+}
+
+@include desktop {
+  .main__text {
+    @include font(20px, 20px, 400);
+    color: $color-link;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
 .main__image {
   margin: 0 auto;
+}
+
+@include tablet {
+  .main__image {
+    display: none;
+  }
 }
 
 .main__button {
@@ -41,4 +104,24 @@
   margin-right: 20px;
   margin-left: 20px;
   background-color: $main-green-color;
+}
+
+@include tablet {
+  .main__button {
+    @include font(20px, 20px, 400);
+    width: 244px;
+    padding: 14px 26px;
+    gap: 4px;
+  }
+}
+
+@include desktop {
+  .main__button {
+    @include font(20px, 20px, 400);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 244px;
+    padding: 14px 26px;
+  }
 }

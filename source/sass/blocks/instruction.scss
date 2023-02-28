@@ -4,13 +4,36 @@
   vertical-align: top;
 }
 
+@include tablet {
+  .instruction__title {
+    @include font(60px, 60px, 400);
+    float: left;
+  }
+}
+
 .instruction__list {
   width: 279px;
+}
+
+@include tablet {
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 
 .instruction__image {
   background-color: $main-green-color;
   padding: 15px 14px;
+}
+
+@include tablet {
+  .instruction__image {
+    padding: 24px 25px;
+  }
 }
 
 .instruction__description {
@@ -19,4 +42,79 @@
   text-align: left;
   vertical-align: top;
   color: $color-text;
+}
+
+@include tablet {
+  .instruction__description {
+    @include font(16px, 24px, 400);
+    font-family: "Lato", sans-serif;
+  }
+}
+
+@include desktop {
+  .instruction {
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+}
+
+@include desktop {
+  .instruction__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .instruction__list-item {
+    display: block;
+    width: 40%;
+    position: relative;
+    margin-bottom: 116px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 70px;
+  }
+}
+
+@include tablet {
+  .instruction__list-item--one {
+    background: url("/img/instruction-one.png") no-repeat;
+    background-size: 71px 228px;
+    background-position: 127px 0;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@include tablet {
+  .instruction__list-item--two {
+    background: url("/img/instruction-two.png") no-repeat;
+    background-size: 114px 228px;
+    background-position: 123px 0;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@include tablet {
+  .instruction__list-item--three {
+    background: url("/img/instruction-three.png") no-repeat;
+    background-size: 113px 228px;
+    background-position: 123px 0;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@include tablet {
+  .instruction__list-item--four {
+    background: url("/img/instruction-four.png") no-repeat;
+    background-size: 121px 228px;
+    background-position: 124px 0;
+    color: #f2f2f2;
+    z-index: -1;
+  }
 }
