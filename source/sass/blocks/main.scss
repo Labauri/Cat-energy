@@ -1,5 +1,5 @@
 .main__promo {
-  background: url("/img/index-background.jpg");
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,8 +17,21 @@
 
 @include desktop {
   .main__promo {
-    background: url("/img/index-background-desktop.png") no-repeat right top;
+    background: url("/img/index-cat-desktop.png") no-repeat 580px center;
     position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      top: 0;
+      height: 694px;
+      left: 50%;
+      background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
   }
 }
 
@@ -47,6 +60,7 @@
     color: $color-link;
     width: 415px;
     text-transform: none;
+    margin-left: 120px;
   }
 }
 
@@ -55,6 +69,7 @@
     @include font(60px, 60px, 400);
     color: $color-link;
     text-transform: none;
+    margin-left: 190px;
   }
 }
 
@@ -70,6 +85,8 @@
     @include font(20px, 20px, 400);
     color: $color-link;
     text-transform: uppercase;
+    text-align: left;
+    margin-left: 120px;
   }
 }
 
@@ -79,6 +96,7 @@
     color: $color-link;
     text-transform: uppercase;
     text-align: left;
+    margin-left: 190px;
   }
 }
 
@@ -112,6 +130,7 @@
     width: 244px;
     padding: 14px 26px;
     gap: 4px;
+    margin-left: 120px;
   }
 }
 
@@ -123,5 +142,6 @@
     text-align: center;
     width: 244px;
     padding: 14px 26px;
+    margin-left: 190px;
   }
 }

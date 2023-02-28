@@ -1,13 +1,12 @@
 .instruction__title {
   @include font(36px, 40px, 400);
-  text-align: center;
   vertical-align: top;
 }
 
 @include tablet {
   .instruction__title {
     @include font(60px, 60px, 400);
-    float: left;
+    text-align: left;
   }
 }
 
