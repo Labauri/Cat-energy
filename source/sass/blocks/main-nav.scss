@@ -27,12 +27,12 @@
 @include tablet {
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
     gap: 35px;
     color: $color-link;
-    text-transform: uppercase;
     width: 100%;
+    padding-right: 110px;
   }
 }
 

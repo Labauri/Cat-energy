@@ -1,3 +1,27 @@
+.fields-contacts {
+  position: relative;
+  border: none;
+}
+
+@include desktop {
+  .fields-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 78px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 3px;
+      background-color: $main-green-color;
+      z-index: -1;
+    }
+  }
+}
+
 .fields-contacts__title {
   @include font(24px, 26px, 400);
   width: 187px;
@@ -6,6 +30,7 @@
 @include tablet {
   .fields-contacts__title {
     @include font(36px, 36px, 400);
+    position: relative;
     width: 512px;
     padding-top: 71px;
     padding-bottom: 76px;
@@ -14,36 +39,10 @@
 
 @include desktop {
   .fields-contacts__title {
+    padding: 0 40px;
     background-color: #ffffff;
+    margin-left: -40px;
     display: inline-block;
-  }
-}
-
-@include desktop {
-  .fields-contacts__container {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      height: 2px;
-      background-color: $main-green-color;
-      z-index: -1;
-    }
-  }
-}
-
-.fields-contacts {
-  border: none;
-}
-
-@include desktop {
-  .fields-contacts {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 
@@ -95,4 +94,16 @@
   padding-left: 10px;
   top: 12px;
   right: 16px;
+}
+
+@include tablet {
+  .fields-contacts__icon {
+    top: 18px;
+  }
+}
+
+@include desktop {
+  .fields-contacts__icon {
+    top: 18px;
+  }
 }
