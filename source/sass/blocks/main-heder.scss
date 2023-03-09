@@ -74,12 +74,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 190px;
+  max-width: 85%;
   width: 100%;
   height: 65px;
   transition: all 0.3s;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 7%;
+  margin-left: 7%;
 }
 
 @include tablet {
@@ -96,8 +96,13 @@
 }
 
 @include tablet {
-  .main-header__logo,
   .main-header__logo-text {
     display: none;
+  }
+}
+
+@include tablet {
+  .main-header__logo {
+    display: block;
   }
 }

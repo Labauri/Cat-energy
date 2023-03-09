@@ -27,6 +27,8 @@
 .instruction__image {
   background-color: $main-green-color;
   padding: 15px 14px;
+  display: flex;
+  flex-grow: 1;
 }
 
 @include tablet {
@@ -41,12 +43,22 @@
   text-align: left;
   vertical-align: top;
   color: $color-text;
+  width: 200px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 @include tablet {
   .instruction__description {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
+  }
+}
+
+@include desktop {
+  .instruction__description {
+    width: 250px;
   }
 }
 
@@ -62,8 +74,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 110%;
   }
+}
+
+.instruction__list-item {
+  display: flex;
+  align-items: center;
 }
 
 @include tablet {
@@ -75,6 +92,16 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 70px;
+  }
+}
+
+@include desktop {
+  .instruction__list-item {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
   }
 }
 

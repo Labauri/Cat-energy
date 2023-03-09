@@ -1,7 +1,7 @@
 .main__promo {
   background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 69%;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -11,7 +11,7 @@
     background-position: center 217px;
     margin: 0;
     padding-top: 100px;
-    padding-bottom: 400px;
+    padding-bottom: 500px;
   }
 }
 
@@ -52,6 +52,8 @@
   color: #ffffff;
   text-align: center;
   vertical-align: top;
+  margin: 0;
+  padding-top: 27px;
 }
 
 @include tablet {
@@ -61,6 +63,7 @@
     width: 415px;
     text-transform: none;
     margin-left: 120px;
+    text-align: left;
   }
 }
 
@@ -70,6 +73,7 @@
     color: $color-link;
     text-transform: none;
     margin-left: 190px;
+    text-align: left;
   }
 }
 
@@ -78,6 +82,7 @@
   color: #ffffff;
   text-align: center;
   vertical-align: top;
+  text-transform: uppercase;
 }
 
 @include tablet {
@@ -101,6 +106,7 @@
 }
 
 .main__image {
+  display: block;
   margin: 0 auto;
 }
 
