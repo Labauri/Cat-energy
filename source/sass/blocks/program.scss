@@ -1,15 +1,28 @@
 .program-list__item {
   background-color: $grey-background;
   padding: 22px;
+  margin-top: 20px;
 
   &:not(:first-child) {
     margin-top: 22px;
   }
 }
 
+@include tablet {
+  .program-list__item {
+    min-height: 372px;
+    position: relative;
+  }
+}
+
+@include desktop {
+  .program-list__item {
+    width: 50%;
+  }
+}
+
 @include desktop {
   .program-list__item:not(:first-child) {
-    margin: 0;
     width: 50%;
   }
 }
@@ -24,56 +37,47 @@
   }
 }
 
-@include tablet {
-  .program-list__item {
-    min-height: 372px;
-  }
-}
-
-@include desktop {
-  .program-list__item {
-    width: 50%;
-  }
-}
-
 .program__title {
   @include font(24px, 37px, 400);
   text-transform: uppercase;
-  text-align: center;
   vertical-align: top;
+  padding-left: 70px;
+  margin-block-start: 0;
 }
 
 @include tablet {
   .program__title {
     @include font(36px, 36px, 400);
     text-align: left;
-    order: 3;
+    padding: 0;
   }
 }
 
 @include desktop {
   .program__title {
     @include font(36px, 36px, 400);
-    text-align: center;
-    order: 2;
-    float: none;
+    vertical-align: middle;
+    padding-top: 57px;
+    padding-left: 200px;
   }
 }
 
 .program__text--slim {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
-  text-align: left;
   vertical-align: top;
   color: $color-text;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 21px;
+  padding-top: 21px;
 }
 
 @include tablet {
   .program__text--slim {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
-    order: 2;
     width: 340px;
+    border: none;
   }
 }
 
@@ -81,25 +85,29 @@
   .program__text--slim {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
-    order: 3;
     width: 457px;
+    padding-left: 52px;
+    padding-top: 22px;
+    border: none;
   }
 }
 
 .program__text--pro {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
-  text-align: left;
   vertical-align: top;
   color: $color-text;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 21px;
+  padding-top: 21px;
 }
 
 @include tablet {
   .program__text--pro {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
-    order: 2;
-    width: 340px;
+    width: 300px;
+    border: none;
   }
 }
 
@@ -107,8 +115,10 @@
   .program__text--pro {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
-    order: 3;
     width: 457px;
+    padding-left: 52px;
+    padding-top: 22px;
+    border: none;
   }
 }
 
@@ -120,18 +130,32 @@
   text-transform: uppercase;
 }
 
+.program-list__icon {
+  position: absolute;
+}
+
 @include tablet {
   .program-list__icon {
     height: 211px;
-    order: 1;
+    position: absolute;
+    right: 62px;
   }
 }
 
 @include desktop {
   .program-list__icon {
     height: 106px;
-    order: 1;
+    left: 52px;
+    top: 41px;
   }
+}
+
+.program__link {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
 }
 
 @include tablet {
@@ -141,6 +165,12 @@
     justify-content: flex-start;
     text-decoration: none;
     gap: 25px;
+  }
+}
+
+@include desktop {
+  .program__link {
+    padding-left: 52px;
   }
 }
 

@@ -1,7 +1,12 @@
+.main-nav {
+  display: none;
+}
+
 @include tablet {
   .main-nav {
     padding-top: 5px;
     padding-left: 20px;
+    display: block;
   }
 }
 
@@ -27,12 +32,12 @@
 @include tablet {
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
     gap: 35px;
     color: $color-link;
-    text-transform: uppercase;
-    margin-left: 250px;
+    width: 500px;
+    padding-right: 110px;
   }
 }
 
@@ -41,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 500px;
     padding-right: 110px;
   }
 }
@@ -96,7 +101,23 @@
   }
 }
 
+.main-nav__toggle {
+  background: url("/img/open-menu.svg") no-repeat right center;
+  height: 18px;
+  width: 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+}
+
 @include tablet {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@include desktop {
   .main-nav__toggle {
     display: none;
   }
