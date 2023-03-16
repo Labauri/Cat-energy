@@ -1,3 +1,15 @@
+.instruction {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@include tablet {
+  .instruction {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+}
+
 .instruction__title {
   @include font(36px, 40px, 400);
   vertical-align: top;
@@ -53,12 +65,15 @@
   .instruction__description {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
+    width: 250px;
+    padding: 0;
   }
 }
 
 @include desktop {
   .instruction__description {
     width: 250px;
+    padding: 0;
   }
 }
 
@@ -74,7 +89,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 110%;
+    justify-content: space-between;
+    width: 100%;
+    gap: 55px;
   }
 }
 
@@ -86,11 +103,9 @@
 @include tablet {
   .instruction__list-item {
     display: block;
-    width: 40%;
+    width: 50%;
     position: relative;
     margin-bottom: 116px;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-bottom: 70px;
   }
 }
@@ -98,7 +113,6 @@
 @include desktop {
   .instruction__list-item {
     display: block;
-    width: 100%;
     padding-right: 0;
     padding-left: 0;
     position: relative;
@@ -115,6 +129,12 @@
   }
 }
 
+@include desktop {
+  .instruction__list-item--one {
+    width: 260px;
+  }
+}
+
 @include tablet {
   .instruction__list-item--two {
     background: url("/img/instruction-two.png") no-repeat;
@@ -122,6 +142,12 @@
     background-position: 123px 0;
     color: #f2f2f2;
     z-index: -1;
+  }
+}
+
+@include desktop {
+  .instruction__list-item--two {
+    width: 260px;
   }
 }
 
@@ -135,6 +161,12 @@
   }
 }
 
+@include desktop {
+  .instruction__list-item--three {
+    width: 260px;
+  }
+}
+
 @include tablet {
   .instruction__list-item--four {
     background: url("/img/instruction-four.png") no-repeat;
@@ -142,5 +174,11 @@
     background-position: 124px 0;
     color: #f2f2f2;
     z-index: -1;
+  }
+}
+
+@include desktop {
+  .instruction__list-item--four {
+    width: 260px;
   }
 }

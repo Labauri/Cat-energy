@@ -1,9 +1,15 @@
+.footer {
+  background-color: $grey-background;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 @include tablet {
   .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 66px 110px;
+    padding: 60px 30px;
   }
 }
 
@@ -20,12 +26,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@include tablet {
+  .footer__logo-link {
+    border: 0;
+  }
 }
 
 .footer__list {
   display: flex;
-  padding-left: 94px;
-  padding-right: 94px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@include tablet {
+  .footer__list {
+    border: 0;
+  }
 }
 
 .footer__list-item {

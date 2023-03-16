@@ -1,19 +1,42 @@
+.demo {
+  background-color: $grey-background;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@include tablet {
+  .demo {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+}
+
+@include desktop {
+  .demo {
+    display: flex;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .demo__title-text {
   @include font(36px, 40px, 400);
   text-align: left;
+  padding-top: 25px;
 }
 
 @include tablet {
   .demo__title-text {
     @include font(60px, 60px, 400);
+    padding-top: 43px;
   }
 }
 
 .demo__title-description {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
-  text-align: center;
   color: $color-text;
+  width: 280px;
 }
 
 @include tablet {
@@ -24,19 +47,11 @@
   }
 }
 
-@include tablet {
-  .demo-stats__value {
-    @include font(30px, 37px, 400);
-    text-align: center;
-    order: 2;
-  }
-}
-
-@include tablet {
-  .demo-stats__subtitle {
-    @include font(14px, 14px, 400);
-    font-family: "Lato", sans-serif;
-    order: 1;
+@include desktop {
+  .demo__title-description {
+    width: 436px;
+    padding-top: 146px;
+    padding-bottom: 69px;
   }
 }
 

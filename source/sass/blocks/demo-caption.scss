@@ -2,4 +2,94 @@
   @include font(14px, 20px, 400);
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@include tablet {
+  .demo-caption {
+    @include font(20px, 20px, 400);
+    width: 174px;
+    text-align: right;
+  }
+}
+
+@include desktop {
+  .demo-caption {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+}
+
+.demo__progress {
+  position: relative;
+  padding-bottom: 40px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@include tablet {
+  .demo__progress {
+    padding-bottom: 101px;
+    width: 560px;
+  }
+}
+
+.demo__image--before {
+  background: url(/img/slider-cat-mobile.png) no-repeat left;
+  background-size: cover;
+  position: relative;
+  width: 165px;
+  right: 15px;
+  height: 256px;
+  background-color: $grey-background;
+}
+
+@include tablet {
+  .demo__image--before {
+    background: url(/img/slider-cat-before-tablet.png) no-repeat center left;
+    background-size: cover;
+    width: 560px;
+    height: 512px;
+    background-color: $grey-background;
+  }
+}
+
+.demo__image--after {
+  background: url("/img/slider-cat-after-mobile.png") no-repeat center right;
+  background-size: cover;
+  width: 135px;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  right: 4%;
+  background-color: $grey-background;
+}
+
+@include tablet {
+  .demo__image--after {
+    background: linear-gradient(#f2f2f2 left, #f2f2f2 right), url("/img/slider-cat-after-tablet.png") no-repeat center right;
+    background-size: cover;
+    width: 560px;
+    height: 512px;
+    left: 0%;
+  }
+}
+
+.demo__button--slider {
+  border: 0;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  right: 44%;
+}
+
+@include tablet {
+  .demo__buttom--tablet {
+    background: url("/img/button-slider-tablet.svg") no-repeat center bottom;
+    height: 512px;
+    background-color: transparent;
+  }
 }
