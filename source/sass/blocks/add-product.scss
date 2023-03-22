@@ -1,20 +1,120 @@
+.add-product {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@include tablet {
+  .add-product {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@include desktop {
+  .add-product {
+    padding-left: 110px;
+    padding-right: 80px;
+  }
+}
+
 @include tablet {
   .add-product__list {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+    box-sizing: border-box;
+    padding: 0 38px;
+  }
+}
+
+@include desktop {
+  .add-product__list {
+    border: none;
+    padding: 0 17px;
+  }
+}
+
+.add-product__list-item {
+  display: block;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+@include tablet {
+  .add-product__list-item {
+    margin: 0 auto;
+    padding: 26px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@include desktop {
+  .add-product__list-item {
+    display: flex;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding: 16px 0;
+
+    &:nth-child(1) {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+}
+
+@include tablet {
+  .add-product__list-item--border {
+    border-bottom: none;
+  }
+}
+
+@include desktop {
+  .add-product__list-item--border {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@include tablet {
+  .add-product__block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #cdcdcd;
+    padding: 27px 38px;
   }
 }
 
 .add-product__title {
   @include font(24px, 24px, 400);
-  text-align: center;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 36px;
 }
 
 @include tablet {
   .add-product__title {
     @include font(36px, 36px, 400);
-    text-align: left;
+    padding-left: 20px;
+    border: none;
+  }
+}
+
+@include desktop {
+  .add-product__title {
+    padding-left: 0;
+  }
+}
+
+.add-product__table {
+  width: 100%;
+}
+
+@include desktop {
+  .add-product_table {
+    width: 50%;
   }
 }
 
@@ -22,53 +122,124 @@
   @include font(16px, 16px, 400);
   text-transform: uppercase;
   color: $grey-catalog-text;
-  padding-top: 32px;
+  padding-top: 5px;
 }
 
 @include tablet {
   .add-product__subtitle {
     @include font(20px, 20px, 400);
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@include desktop {
+  .add-product__subtitle {
+    display: flex;
+    align-items: center;
+    width: 400px;
   }
 }
 
 .add-product__subtext {
   @include font(14px, 14px, 400);
   font-family: "Lato", sans-serif;
-  padding-right: 120px;
-  width: 100px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 }
 
 @include tablet {
   .add-product__subtext {
     @include font(16px, 20px, 400);
     font-family: "Lato", sans-serif;
+    padding-bottom: 25px;
+  }
+}
+
+@include desktop {
+  .add-product__subtext {
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+}
+
+.add-product__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@include tablet {
+  .add-product__flex {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+}
+
+@include desktop {
+  .add-product__flex {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .add-product__button {
   @include font(16px, 20px, 400);
   background-color: $main-green-color;
+  display: block;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 109px;
+  padding: 10px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@include tablet {
+  .add-product__button {
+    text-align: center;
+  }
+}
+
+@include desktop {
+  .add-product__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
 }
 
 .add-product__gift {
   text-align: center;
-  width: 280px;
   height: 290px;
   margin-top: 55px;
-  background-image: url("../img/catalog-gift-background.png");
-  background-color: #68b738;
+  background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/catalog-gift-background.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@include tablet {
+  .add-product__gift {
+    margin: 0 auto;
+    background-size: cover;
+    height: 200px;
+  }
+}
+
+@include desktop {
+  .add-product__gift {
+    height: 289px;
+  }
 }
 
 .add-product__gift-text {
@@ -78,4 +249,30 @@
   color: #ffffff;
   width: 160px;
   padding-top: 20px;
+}
+
+@include tablet {
+  .add-product__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 265px;
+  }
+}
+
+@include desktop {
+  .add-product__container {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    width: 245px;
+  }
+}
+
+@include desktop {
+  .add-product__container-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
 }

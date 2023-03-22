@@ -73,7 +73,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0px 15px;
+  padding: 0 15px;
   bottom: -8px;
   text-align: center;
   background-color: #f2f2f2;
@@ -84,6 +84,6 @@
     @include font(14px, 14px, 400);
     text-align: center;
     width: 125px;
-    padding: 0px 7px;
+    padding: 0 7px;
   }
 }

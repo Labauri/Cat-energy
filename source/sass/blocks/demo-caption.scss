@@ -38,7 +38,7 @@
 }
 
 .demo__image--before {
-  background: url(/img/slider-cat-mobile.png) no-repeat left;
+  background: url("/img/slider-cat-mobile.png") no-repeat left;
   background-size: cover;
   position: relative;
   width: 165px;
@@ -49,7 +49,7 @@
 
 @include tablet {
   .demo__image--before {
-    background: url(/img/slider-cat-before-tablet.png) no-repeat center left;
+    background: url("/img/slider-cat-before-tablet.png") no-repeat center left;
     background-size: cover;
     width: 560px;
     height: 512px;
@@ -70,7 +70,7 @@
 
 @include tablet {
   .demo__image--after {
-    background: linear-gradient(#f2f2f2 left, #f2f2f2 right), url("/img/slider-cat-after-tablet.png") no-repeat center right;
+    background: url("/img/slider-cat-after-tablet.png") no-repeat center right;
     background-size: cover;
     width: 560px;
     height: 512px;
