@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/burger-menu.js"></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -16,11 +17,11 @@
       <a class="main-header__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовое Лого Кота-Энерджи">
       </a>
-    </div>
-    <nav class="main-nav">
       <button class="main-nav__toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__list-item main-nav__list-item--current">
           <a class="main-nav_list-link main-nav_list-link--white" href="index.html">Главная</a>
@@ -38,8 +39,8 @@
     <section class="main__promo">
       <h1 class="main__title">Функциональное питание для котов</h1>
       <p class="main__text">Занялся собой? Займись котом!</p>
-      <div class="main__image">
-        <img src="img/index-can-mobile.png" alt="Продукция кота">
+      <div>
+        <img class="main__image" src="img/index-can-mobile.png" alt="Продукция кота">
       </div>
       <a class="main__button" href="form.html">Подобрать программу</a>
     </section>
@@ -95,34 +96,55 @@
         </ul>
       </section>
       <section class="demo">
-        <div class="demo__title">
-          <h2 class="demo__title-text">Живой пример</h2>
-          <p class="demo__title-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="demo__div">
+          <div class="demo__title">
+            <h2 class="demo__title-text">Живой пример</h2>
+            <p class="demo__title-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          </div>
+          <div class="demo-stats__container">
+            <dl class="demo-stats">
+              <div class="demo-stats__block">
+                <dt class="demo-stats__value">снижение веса</dt>
+                <dd class="demo-stats__subtitle">5 кг</dd>
+              </div>
+              <div class="demo-stats__block">
+                <dt class="demo-stats__value">затрачено времени</dt>
+                <dd class="demo-stats__subtitle">60 дней</dd>
+              </div>
+            </dl>
+            <span class="demo-caption">Затраты на питание: 15 000 РУБ.</span>
+          </div>
         </div>
-        <dl class="demo-stats">
-          <dt class="demo-stats__value">снижение веса</dt>
-          <dd class="demo-stats__subtitle">5 кг</dd>
-          <dt class="demo-stats__value">затрачено времени</dt>
-          <dd class="demo-stats__subtitle">60 дней</dd>
-        </dl>
-        <span class="demo-caption">Затраты на питание: 15 000 РУБ.</span>
         <div class="demo__progress">
           <div class="demo__image-wrapper">
             <div class="demo__image--before"></div>
             <div class="demo__image--after"></div>
           </div>
           <div class="demo__inner">
-            <button class="demo__button--slider" type="button"></button>
+            <button class="demo__button--slider" type="button">
+              <svg class="demo__buttom--tablet" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" width="4" height="257.02" rx="2" fill="#666666"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+                <path d="M16 120L8 129L16 138V120Z" fill="#666666"/>
+                <path d="M32 129L24 120V138L32 129Z" fill="#666666"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__container">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <div class="contacts__block">
+            <address class="contacts__text">ул. Большая Конюшенная, д. 19/8</address>
+            <address class="contacts__subtext">Санкт-Петербург</address>
+          </div>
         </div>
-        <div class="contacts__map" id="map"></div>
       </section>
+    </div>
+    <div class="contacts__map" id="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor" class="contacts__map" width="100%" height="362"></iframe>
     </div>
   </main>
   <footer class="footer">

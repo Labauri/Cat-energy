@@ -14,11 +14,11 @@
       <a class="main-header__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовое Лого Кота-Энерджи">
       </a>
-    </div>
-    <nav class="main-nav">
       <button class="main-nav__toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__list-item">
           <a class="main-nav_list-link" href="index.html">Главная</a>
@@ -30,7 +30,6 @@
           <a class="main-nav_list-link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-    </nav>
   </header>
   <main class="form-main">
     <section class="form-section">
@@ -116,10 +115,16 @@
     <section class="contacts">
       <div class="contacts__container">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__block">
+          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="contacts__subtext">Санкт-Петербург</address>
+        </div>
       </div>
-      <div class="contacts__map" id="map"></div>
     </section>
+  </div>
+  <div class="contacts__map" id="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor" class="contacts__map" width="100%" height="362"></iframe>
+  </div>
   </main>
   <footer class="footer">
     <a class="footer__logo-link" href="index.html">

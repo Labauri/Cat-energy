@@ -1,27 +1,45 @@
+@include desktop {
+  .contacts {
+    position: relative;
+  }
+}
+
 .contacts__container {
   display: flex;
   width: 100%;
-  background-color: $grey-background;
-  padding-top: 26px;
+  padding: 26px 20px;
 }
 
-.contacts__map {
-  background: url("/img/location-map.jpg") no-repeat;
-  background-size: 320px 362px;
-  height: 362px;
+@include tablet {
+  .contacts__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 56px 0;
+  }
+}
+
+@include desktop {
+  .contacts__container {
+    width: 565px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    left: 30px;
+    top: 115px;
+    padding: 50px 20px;
+  }
 }
 
 @include tablet {
   .contacts__map {
-    background: url("/img/location-map.jpg") no-repeat;
-    background-size: 768px 396px;
-    height: 396px;
+    height: 400px;
   }
 }
 
 .contacts__title {
   @include font(16px, 20px, 400);
   text-transform: uppercase;
+  width: 140px;
 }
 
 @include tablet {
@@ -42,5 +60,48 @@
     font-family: "Lato", sans-serif;
     width: 160px;
     text-align: right;
+    padding-bottom: 20px;
+  }
+}
+
+@include desktop {
+  .contacts__text {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
+
+.contacts__subtext {
+  @include font(14px, 20px, 400);
+  font-family: "Lato", sans-serif;
+}
+
+@include tablet {
+  .contacts__subtext {
+    text-align: right;
+  }
+}
+
+@include desktop {
+  .contacts__subtext {
+    @include font(16px, 20px, 400);
+    font-family: "Lato", sans-serif;
+    text-align: left;
+  }
+}
+
+.contacts__block {
+  width: 140px;
+}
+
+@include tablet {
+  .contacts__block {
+    width: 160px;
+  }
+}
+
+@include desktop {
+  .contacts__block {
+    width: 175px;
   }
 }
