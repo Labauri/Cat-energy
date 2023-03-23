@@ -1,6 +1,7 @@
 .fields-contacts {
   position: relative;
   border: none;
+  padding: 0;
 }
 
 @include desktop {
@@ -24,6 +25,8 @@
 .fields-contacts__title {
   @include font(24px, 26px, 400);
   width: 187px;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 @include tablet {

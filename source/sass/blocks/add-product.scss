@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-color;
     margin-bottom: 69px;
     box-sizing: border-box;
     padding: 0 38px;
@@ -47,7 +47,7 @@
   .add-product__list-item {
     margin: 0 auto;
     padding: 26px 0;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -60,7 +60,7 @@
     padding: 16px 0;
 
     &:nth-child(1) {
-      border-top: 1px solid #cdcdcd;
+      border-top: 1px solid $border-color;
     }
   }
 }
@@ -73,7 +73,7 @@
 
 @include desktop {
   .add-product__list-item--border {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -90,7 +90,7 @@
 
 .add-product__title {
   @include font(24px, 24px, 400);
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $border-color;
   padding-bottom: 36px;
 }
 
