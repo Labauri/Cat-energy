@@ -1,29 +1,22 @@
-.form-section {
+.form-title {
+  @include font(36px, 36px, 400);
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @include tablet {
-  .form-section {
+  .form-title {
+    @include font(60px, 60px, 400);
     padding-left: 70px;
     padding-right: 70px;
   }
 }
 
 @include desktop {
-  .form-section {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-}
-
-.form-title {
-  @include font(36px, 36px, 400);
-}
-
-@include tablet {
   .form-title {
     @include font(60px, 60px, 400);
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -32,11 +25,24 @@
   width: 226px;
   text-transform: uppercase;
   padding-bottom: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @include tablet {
   .form-text {
     @include font(20px, 30px, 400);
     width: 323px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@include desktop {
+  .form-text {
+    @include font(20px, 30px, 400);
+    width: 323px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

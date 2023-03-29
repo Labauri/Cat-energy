@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 @include tablet {
@@ -11,20 +13,25 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    gap: 64px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .fields-application__button {
-  @include font(16px, 20px, 400);
-  background-color: $main-green-color;
-  color: #ffffff;
-  border: none;
-  text-decoration: none;
   padding: 10px 44px;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 21px;
   width: 100%;
+}
+
+@include tablet {
+  .fields-application__button {
+    width: 50%;
+    padding: 13px 45px;
+  }
 }
 
 .fields-application__note {
@@ -32,4 +39,13 @@
   font-family: "Lato", sans-serif;
   text-align: center;
   padding-bottom: 32px;
+}
+
+@include tablet {
+  .fields-application__note {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
 }

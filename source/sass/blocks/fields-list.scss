@@ -1,21 +1,85 @@
 .fields-list {
-  margin: 20px 0;
   border-bottom: 1px solid $border-color;
   padding-bottom: 19px;
+  padding-right: 25px;
+}
+
+@include tablet {
+  .fields-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 @include desktop {
   .fields-list {
-    width: 44%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 57px;
+    padding-bottom: 61px;
+  }
+}
+
+.fields-program {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@include tablet {
+  .fields-program {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@include desktop {
+  .fields-program {
+    width: 44%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.fields-list__program {
+  padding-left: 20px;
+  padding-top: 22px;
+}
+
+@include tablet {
+  .fields-list__program {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid $border-color;
+    padding-left: 27px;
+    padding-top: 25px;
+  }
+}
+
+@include desktop {
+  .fields-list__program {
+    padding-bottom: 0;
   }
 }
 
 .fields-list__item {
   padding-top: 6px;
   margin-bottom: 12px;
+}
+
+@include tablet {
+  .fields-list__item {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .fields-list__program-label {
@@ -47,6 +111,7 @@
 @include tablet {
   .fields-list__program-label {
     @include font(20px, 30px, 400);
+    width: 507px;
   }
 }
 

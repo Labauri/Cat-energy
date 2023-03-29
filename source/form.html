@@ -51,23 +51,25 @@
               <input class="fields-textfields" type="text" id="age" name="age" placeholder="7">
             </div>
           </fieldset>
-          <ul class="fields-list">
-            <li class="fields-list__item">
-              <input class="fields-list__program-input" type="radio" name="program" value="slim" id="slim" checked>
-              <label class="fields-list__program-label" for="slim" tabindex="0">Похудение</label>
-            </li>
-            <li class="fields-list__item">
-              <input class="fields-list__program-input" type="radio" name="program" value="mass" id="mass">
-              <label class="fields-list__program-label" for="mass" tabindex="0">Набор массы</label>
-            </li>
-            <li class="fields-list__item">
-              <input class="fields-list__program-input" type="radio" name="program" value="advice" id="advice">
-              <label class="fields-list__program-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
+          <fieldset class="fields-program">
+            <ul class="fields-list fields-list__program">
+              <li class="fields-list__item">
+                <input class="fields-list__program-input" type="radio" name="program" value="slim" id="slim" checked>
+                <label class="fields-list__program-label" for="slim" tabindex="0">Похудение</label>
+              </li>
+              <li class="fields-list__item">
+                <input class="fields-list__program-input" type="radio" name="program" value="mass" id="mass">
+                <label class="fields-list__program-label" for="mass" tabindex="0">Набор массы</label>
+              </li>
+              <li class="fields-list__item">
+                <input class="fields-list__program-input" type="radio" name="program" value="advice" id="advice">
+                <label class="fields-list__program-label" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <fieldset class="fields-contacts">
-          <legend class="fields-contacts__title">Контактные данные (владельца кота)</legend>
+          <legend class="fields-contacts__title fields-title">Контактные данные (владельца кота)</legend>
           <div class="fields-contacts__block">
             <label class="fields-contacts__label" for="email">E-mail:*</label>
             <input class="fields-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
@@ -84,32 +86,34 @@
           </div>
         </fieldset>
         <fieldset class="fields-comment">
-          <legend class="fields-comment__title">Комментарий</legend>
+          <legend class="fields-comment__title fields-title">Комментарий</legend>
             <textarea class="fields-comment__textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <h2 class="fields-title fields-add">Дополнительно</h2>
-        <ul class="fields-list fields-add">
-          <li class="fields-list__item fields-add__item">
-            <input class="fields-list__add-input" type="checkbox" name="product" value="sweetener" id="sweetener" checked>
-            <label class="fields-list__add-label" for="sweetener" tabindex="0">Сахарозаменитель</label>
-          </li>
-          <li class="fields-list__item fields-add">
-            <input class="fields-list__add-input" type="checkbox" name="product" value="water" id="water">
-            <label class="fields-list__add-label" for="water" tabindex="0">Питьевая вода</label>
-          </li>
-          <li class="fields-list__item fields-add">
-            <input class="fields-list__add-input" type="checkbox" name="product" value="milk" id="milk">
-            <label class="fields-list__add-label" for="milk" tabindex="0">Молоко</label>
-          </li>
-          <li class="fields-list__item fields-add">
-            <input class="fields-list__add-input" type="checkbox" name="product" value="vitamins" id="vitamins">
-            <label class="fields-list__add-label" for="vitamins" tabindex="0">Витамины</label>
-          </li>
-        </ul>
-        <div class="fields-application">
-          <button class="fields-application__button" type="submit">Отправить заявку</button>
-          <span class="fields-application__note">* — Обязательные поля</span>
-        </div>
+        <fieldset class="fields-add">
+          <legend class="fields-add__title fields-title fields-title--padding">Дополнительно</legend>
+          <ul class="fields-list fields-add-list">
+            <li class="fields-list__item fields-add__item">
+              <input class="fields-list__add-input" type="checkbox" name="product" value="sweetener" id="sweetener" checked>
+              <label class="fields-list__add-label" for="sweetener" tabindex="0">Сахарозаменитель</label>
+            </li>
+            <li class="fields-list__item">
+              <input class="fields-list__add-input" type="checkbox" name="product" value="water" id="water">
+              <label class="fields-list__add-label" for="water" tabindex="0">Питьевая вода</label>
+            </li>
+            <li class="fields-list__item">
+              <input class="fields-list__add-input" type="checkbox" name="product" value="milk" id="milk">
+              <label class="fields-list__add-label" for="milk" tabindex="0">Молоко</label>
+            </li>
+            <li class="fields-list__item">
+              <input class="fields-list__add-input" type="checkbox" name="product" value="vitamins" id="vitamins">
+              <label class="fields-list__add-label" for="vitamins" tabindex="0">Витамины</label>
+            </li>
+          </ul>
+          <div class="fields-application">
+            <button class="fields-application__button button" type="submit">Отправить заявку</button>
+            <span class="fields-application__note">* — Обязательные поля</span>
+          </div>
+        </fieldset>
       </form>
     </section>
     <section class="contacts contacts__form">

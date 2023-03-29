@@ -1,28 +1,51 @@
-.fields-title {
-  @include font(24px, 26px, 400);
+.fields-add__title {
+  width: 141px;
 }
 
 @include tablet {
-  .fields-title {
-    @include font(36px, 36px, 400);
+  .fields-add__title {
+    width: 211px;
+  }
+}
+
+@include tablet {
+  .fields-title--padding {
+    padding-bottom: 56px;
+  }
+}
+
+@include desktop {
+  .fields-title--padding {
+    padding-bottom: 0;
   }
 }
 
 .fields-add {
   border: none;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@include tablet {
+  .fields-add {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 @include desktop {
   .fields-add {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
-@include desktop {
-  .fields-list__item {
-    width: 100%;
-  }
+.fields-add-list {
+  border: none;
 }
 
 .fields-list__add-label {

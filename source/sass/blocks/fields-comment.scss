@@ -1,18 +1,21 @@
 .fields-comment {
   border: none;
-  padding: 0;
-}
-
-.fields-comment__title {
-  @include font(24px, 26px, 400);
-  width: 253px;
-  padding-bottom: 37px;
-  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 
 @include tablet {
-  .fields-comment__title {
-    @include font(36px, 36px, 400);
+  .fields-comment {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@include desktop {
+  .fields-comment {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -26,6 +29,7 @@
   padding-left: 13px;
   padding-right: 13px;
   resize: none;
+  box-sizing: border-box;
 }
 
 @include tablet {

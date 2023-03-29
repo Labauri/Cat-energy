@@ -26,7 +26,6 @@
     border: 1px solid $border-color;
     margin-bottom: 69px;
     box-sizing: border-box;
-    padding: 0 38px;
   }
 }
 
@@ -39,8 +38,9 @@
 
 .add-product__list-item {
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   width: 100%;
+  border-bottom: 1px solid $border-color;
 }
 
 @include tablet {
@@ -48,6 +48,9 @@
     margin: 0 auto;
     padding: 26px 0;
     border-bottom: 1px solid $border-color;
+    padding-left: 38px;
+    padding-right: 38px;
+    box-sizing: border-box;
   }
 }
 
@@ -74,6 +77,20 @@
 @include desktop {
   .add-product__list-item--border {
     border-bottom: 1px solid $border-color;
+  }
+}
+
+@include tablet {
+  .add-product__list-block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include desktop {
+  .add-product__list-block {
+    display: flex;
+    flex-basis: 117%;
   }
 }
 
@@ -129,10 +146,8 @@
   .add-product__subtitle {
     @include font(20px, 20px, 400);
     margin: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    padding-bottom: 25px;
+    width: 100%;
   }
 }
 
@@ -141,6 +156,8 @@
     display: flex;
     align-items: center;
     width: 400px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -189,14 +206,8 @@
 }
 
 .add-product__button {
-  @include font(16px, 20px, 400);
-  background-color: $main-green-color;
   display: block;
-  color: #ffffff;
-  text-decoration: none;
   padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 @include tablet {
