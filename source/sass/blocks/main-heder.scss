@@ -89,6 +89,13 @@
   }
 }
 
+@include desktop {
+  .main-header__container {
+    margin-right: 0;
+    margin-left: 110px;
+  }
+}
+
 .main-header__logo-text {
   display: flex;
   align-items: center;

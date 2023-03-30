@@ -9,8 +9,9 @@ ul {
   padding: 0;
 }
 
-image {
-  max-width: 100%;
+img {
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
