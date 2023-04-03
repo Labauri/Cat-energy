@@ -76,8 +76,8 @@
   .program__title {
     @include font(36px, 36px, 400);
     vertical-align: middle;
-    padding-top: 57px;
-    padding-left: 200px;
+    padding-top: 75px;
+    padding-left: 175px;
   }
 }
 
@@ -99,6 +99,12 @@
   }
 }
 
+@include desktop {
+  .program__text {
+    padding: 70px 0 23px 0;
+  }
+}
+
 @include tablet {
   .program__text--slim {
     @include font(16px, 24px, 400);
@@ -111,8 +117,6 @@
 @include desktop {
   .program__text--slim {
     width: 457px;
-    padding-left: 52px;
-    padding-top: 22px;
     border: none;
   }
 }
@@ -129,8 +133,6 @@
 @include desktop {
   .program__text--pro {
     width: 457px;
-    padding-left: 52px;
-    padding-top: 22px;
     border: none;
   }
 }
@@ -187,12 +189,6 @@
     text-decoration: none;
     gap: 25px;
     padding-top: 0;
-  }
-}
-
-@include desktop {
-  .program__link {
-    padding-left: 52px;
   }
 }
 
