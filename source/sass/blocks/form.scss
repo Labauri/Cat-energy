@@ -1,12 +1,10 @@
 .form-title {
-  @include font(36px, 36px, 400);
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @include tablet {
   .form-title {
-    @include font(60px, 60px, 400);
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -14,7 +12,6 @@
 
 @include desktop {
   .form-title {
-    @include font(60px, 60px, 400);
     padding-left: 110px;
     padding-right: 110px;
   }

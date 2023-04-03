@@ -1,3 +1,9 @@
 .title {
-  background-color: transparent;
+  @include font(36px, 36px, 400);
+}
+
+@include tablet {
+  .title {
+    @include font(60px, 60px, 400);
+  }
 }

@@ -20,7 +20,6 @@
 }
 
 .demo__title-text {
-  @include font(36px, 40px, 400);
   text-align: left;
   padding-top: 25px;
   margin-block-start: 0;
@@ -29,7 +28,6 @@
 
 @include tablet {
   .demo__title-text {
-    @include font(60px, 60px, 400);
     padding-top: 43px;
   }
 }

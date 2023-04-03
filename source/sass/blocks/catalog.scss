@@ -1,5 +1,4 @@
 .catalog__title {
-  @include font(36px, 36px, 400);
   padding-left: 20px;
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 40px;
@@ -7,7 +6,6 @@
 
 @include tablet {
   .catalog__title {
-    @include font(60px, 60px, 400);
     border: none;
     padding-left: 30px;
   }
@@ -15,7 +13,6 @@
 
 @include desktop {
   .catalog__title {
-    @include font(60px, 60px, 400);
     margin-top: 61px;
     padding-top: 0;
     margin-bottom: 27px;

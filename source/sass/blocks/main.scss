@@ -46,7 +46,6 @@
 }
 
 .main__title {
-  @include font(36px, 36px, 400);
   color: #ffffff;
   text-align: center;
   vertical-align: top;
@@ -57,7 +56,6 @@
 
 @include tablet {
   .main__title {
-    @include font(60px, 60px, 400);
     color: $color-link;
     width: 415px;
     text-transform: none;
@@ -68,7 +66,6 @@
 
 @include desktop {
   .main__title {
-    @include font(60px, 60px, 400);
     color: $color-link;
     text-transform: none;
     text-align: left;
