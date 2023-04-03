@@ -34,10 +34,8 @@
   }
 }
 
-@include tablet {
-  .contacts__map {
-    height: 400px;
-  }
+.map__frame {
+  border: none;
 }
 
 .contacts__title {

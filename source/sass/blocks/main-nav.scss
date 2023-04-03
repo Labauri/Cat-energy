@@ -73,14 +73,14 @@
   }
 }
 
-.main-nav_list-link {
+.main-nav__list-link {
   @include font(20px, 20px, 400);
   text-decoration: none;
   color: $color-link;
 }
 
 @include tablet {
-  .main-nav_list-link {
+  .main-nav__list-link {
     @include font(18px, 24px, 400);
     text-decoration: none;
     color: $color-link;
@@ -88,7 +88,7 @@
 }
 
 @include desktop {
-  .main-nav_list-link {
+  .main-nav__list-link {
     @include font(20px, 40px, 400);
     text-decoration: none;
     color: $color-link;
@@ -96,12 +96,12 @@
 }
 
 @include desktop {
-  .main-nav_list-link--white {
+  .main-nav__list-link--white {
     color: #ffffff;
   }
 }
 
-.main-nav__toggle {
+.main-toggle {
   background: url("/img/open-menu.svg") no-repeat right center;
   height: 18px;
   width: 24px;
@@ -112,13 +112,13 @@
 }
 
 @include tablet {
-  .main-nav__toggle {
+  .main-toggle {
     display: none;
   }
 }
 
 @include desktop {
-  .main-nav__toggle {
+  .main-toggle {
     display: none;
   }
 }

@@ -24,14 +24,13 @@
 
 .instruction__list {
   width: 279px;
+  padding-bottom: 50px;
 }
 
 @include tablet {
   .instruction__list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
     width: 100%;
   }
 }

@@ -18,7 +18,7 @@
 }
 
 @include tablet {
-  .demo-stats__container {
+  .demo-stats__wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -27,7 +27,7 @@
 }
 
 @include desktop {
-  .demo-stats__container {
+  .demo-stats__wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-.demo-stats__subtitle {
+.demo-stats__value {
   @include font(24px, 24px, 400);
   text-align: center;
   text-transform: uppercase;
@@ -60,13 +60,13 @@
 }
 
 @include tablet {
-  .demo-stats__subtitle {
+  .demo-stats__value {
     @include font(30px, 37px, 400);
     font-family: "Lato", sans-serif;
   }
 }
 
-.demo-stats__value {
+.demo-stats__subtitle {
   @include font(12px, 12px, 400);
   font-family: "Lato", sans-serif;
   color: $color-text;
@@ -80,7 +80,7 @@
 }
 
 @include tablet {
-  .demo-stats__value {
+  .demo-stats__subtitle {
     @include font(14px, 14px, 400);
     text-align: center;
     width: 125px;

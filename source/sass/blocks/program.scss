@@ -12,7 +12,7 @@
 
 .program-list__item {
   background-color: $grey-background;
-  padding: 22px;
+  padding: 21px 33px 18px 20px;
   margin-top: 20px;
 
   &:not(:first-child) {
@@ -24,6 +24,10 @@
   .program-list__item {
     min-height: 372px;
     position: relative;
+    padding-left: 52px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -53,15 +57,18 @@
   @include font(24px, 37px, 400);
   text-transform: uppercase;
   vertical-align: top;
-  padding-left: 70px;
+  padding-left: 75px;
   margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 10px;
 }
 
 @include tablet {
   .program__title {
     @include font(36px, 36px, 400);
     text-align: left;
-    padding: 0;
+    padding-top: 77px;
+    padding-left: 0;
   }
 }
 
@@ -74,7 +81,7 @@
   }
 }
 
-.program__text--slim {
+.program__text {
   @include font(14px, 18px, 400);
   font-family: "Lato", sans-serif;
   vertical-align: top;
@@ -82,6 +89,14 @@
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 21px;
   padding-top: 21px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@include tablet {
+  .program__text {
+    padding: 24px 0 48px 0;
+  }
 }
 
 @include tablet {
@@ -95,38 +110,24 @@
 
 @include desktop {
   .program__text--slim {
-    @include font(16px, 24px, 400);
-    font-family: "Lato", sans-serif;
     width: 457px;
     padding-left: 52px;
     padding-top: 22px;
     border: none;
   }
-}
-
-.program__text--pro {
-  @include font(14px, 18px, 400);
-  font-family: "Lato", sans-serif;
-  vertical-align: top;
-  color: $color-text;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 21px;
-  padding-top: 21px;
 }
 
 @include tablet {
   .program__text--pro {
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
-    width: 300px;
+    width: 340px;
     border: none;
   }
 }
 
 @include desktop {
   .program__text--pro {
-    @include font(16px, 24px, 400);
-    font-family: "Lato", sans-serif;
     width: 457px;
     padding-left: 52px;
     padding-top: 22px;
@@ -134,7 +135,7 @@
   }
 }
 
-.program__catalog {
+.program__link-catalog {
   @include font(16px, 16px, 400);
   color: $color-link;
   text-align: left;
@@ -151,6 +152,7 @@
     height: 211px;
     position: absolute;
     right: 62px;
+    top: 20%;
   }
 }
 
@@ -162,12 +164,19 @@
   }
 }
 
+@include tablet {
+  .program-list__icon--position {
+    right: 25px;
+  }
+}
+
 .program__link {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   text-decoration: none;
   gap: 15px;
+  padding-top: 19px;
 }
 
 @include tablet {
@@ -177,6 +186,7 @@
     justify-content: flex-start;
     text-decoration: none;
     gap: 25px;
+    padding-top: 0;
   }
 }
 

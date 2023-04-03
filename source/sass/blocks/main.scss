@@ -3,6 +3,10 @@
   background-size: 100% 69%;
   background-position: center top;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @include tablet {
@@ -10,8 +14,11 @@
     background: url("/img/index-cat-tablet.png") no-repeat;
     background-position: center 217px;
     margin: 0;
-    padding-top: 250px;
-    padding-bottom: 500px;
+    padding-bottom: 520px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 120px;
   }
 }
 
@@ -19,7 +26,9 @@
   .main__promo {
     background: url("/img/index-cat-desktop.png") no-repeat 550px center;
     position: relative;
-    padding-bottom: 400px;
+    padding-bottom: 300px;
+    padding-top: 160px;
+    padding-left: 190px;
 
     &::before {
       content: "";
@@ -42,7 +51,8 @@
   text-align: center;
   vertical-align: top;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 25px;
+  width: 250px;
 }
 
 @include tablet {
@@ -51,8 +61,8 @@
     color: $color-link;
     width: 415px;
     text-transform: none;
-    margin-left: 120px;
     text-align: left;
+    padding-bottom: 20px;
   }
 }
 
@@ -61,7 +71,6 @@
     @include font(60px, 60px, 400);
     color: $color-link;
     text-transform: none;
-    margin-left: 190px;
     text-align: left;
   }
 }
@@ -80,7 +89,7 @@
     color: $color-link;
     text-transform: uppercase;
     text-align: left;
-    margin-left: 120px;
+    padding-bottom: 25px;
   }
 }
 
@@ -90,7 +99,6 @@
     color: $color-link;
     text-transform: uppercase;
     text-align: left;
-    margin-left: 190px;
   }
 }
 
@@ -106,9 +114,8 @@
 }
 
 .main__button {
-  @include font(14px, 18px, 400);
   display: flex;
-  align-items: center;
+  align-self: normal;
   justify-content: center;
   padding: 7px 44px;
   margin-right: 20px;
@@ -121,7 +128,7 @@
     width: 244px;
     padding: 14px 26px;
     gap: 4px;
-    margin-left: 120px;
+    margin: 0;
   }
 }
 
@@ -133,6 +140,5 @@
     text-align: center;
     width: 244px;
     padding: 14px 26px;
-    margin-left: 190px;
   }
 }
