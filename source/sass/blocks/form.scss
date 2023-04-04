@@ -1,19 +1,16 @@
 .form-title {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 27px 20px;
 }
 
 @include tablet {
   .form-title {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 50px 70px;
   }
 }
 
 @include desktop {
   .form-title {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 70px 110px;
   }
 }
 
@@ -24,6 +21,7 @@
   padding-bottom: 29px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
 }
 
 @include tablet {
@@ -32,6 +30,7 @@
     width: 323px;
     padding-left: 70px;
     padding-right: 70px;
+    margin: 0;
   }
 }
 
@@ -41,5 +40,6 @@
     width: 323px;
     padding-left: 110px;
     padding-right: 110px;
+    margin: 0;
   }
 }

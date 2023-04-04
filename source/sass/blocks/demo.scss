@@ -1,13 +1,14 @@
 .demo {
-  background-color: $grey-background;
+  background-color: #f2f2f2;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 @include tablet {
   .demo {
-    padding-right: 31px;
-    padding-left: 31px;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #ffffff;
   }
 }
 
@@ -29,6 +30,8 @@
 @include tablet {
   .demo__title-text {
     padding-top: 43px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -44,6 +47,11 @@
     @include font(16px, 24px, 400);
     font-family: "Lato", sans-serif;
     width: 708px;
+    padding-top: 63px;
+    padding-bottom: 54px;
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 

@@ -90,7 +90,8 @@
 @include desktop {
   .add-product__list-block {
     display: flex;
-    flex-basis: 117%;
+    width: 100%;
+    min-width: 630px;
   }
 }
 

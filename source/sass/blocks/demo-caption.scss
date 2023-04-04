@@ -10,6 +10,7 @@
     @include font(20px, 20px, 400);
     width: 174px;
     text-align: right;
+    padding-top: 0;
   }
 }
 
@@ -21,11 +22,41 @@
   }
 }
 
+.demo__main-container {
+  display: none;
+}
+
+@include tablet {
+  .demo__main-container {
+    display: block;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 462px;
+    position: absolute;
+    top: 265%;
+    z-index: 0;
+  }
+}
+
+@include desktop {
+  .demo__main-container {
+    display: none;
+  }
+}
+
 .demo-caption__container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 20px;
+}
+
+@include tablet {
+  .demo-caption__container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0;
+  }
 }
 
 .demo__progress {
@@ -58,7 +89,6 @@
     background-size: cover;
     width: 560px;
     height: 512px;
-    background-color: $grey-background;
   }
 }
 

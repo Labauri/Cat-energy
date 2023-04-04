@@ -18,16 +18,17 @@
 }
 
 @include tablet {
-  .demo-stats__wrapper {
+  .demo__stats-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
     padding-bottom: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
 @include desktop {
-  .demo-stats__wrapper {
+  .demo__stats-wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -85,5 +86,6 @@
     text-align: center;
     width: 125px;
     padding: 0 7px;
+    background-color: #ffffff;
   }
 }

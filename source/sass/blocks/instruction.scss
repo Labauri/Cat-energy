@@ -7,6 +7,7 @@
   .instruction {
     padding-right: 31px;
     padding-left: 31px;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -18,6 +19,8 @@
   .instruction__title {
     @include font(60px, 60px, 400);
     text-align: left;
+    padding-top: 45px;
+    padding-bottom: 72px;
   }
 }
 
@@ -31,6 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 0;
   }
 }
 

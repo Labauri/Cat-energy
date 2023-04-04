@@ -1,7 +1,7 @@
 .catalog__title {
   padding-left: 20px;
   border-bottom: 1px solid #ebebeb;
-  padding-bottom: 40px;
+  padding: 27px 20px;
 }
 
 @include tablet {
@@ -14,7 +14,6 @@
 @include desktop {
   .catalog__title {
     margin-top: 61px;
-    padding-top: 0;
     margin-bottom: 27px;
     padding-left: 0;
   }
@@ -31,11 +30,6 @@
   .catalog {
     padding-left: 110px;
   }
-}
-
-.catalog__list {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @include tablet {
@@ -87,8 +81,11 @@
   gap: 20px;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   width: 100%;
-  padding-bottom: 86px;
+  padding-top: 20px;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
 }
 
 @include tablet {
@@ -101,6 +98,7 @@
     justify-content: center;
     width: 46%;
     gap: 34px;
+    border: none;
   }
 }
 
@@ -111,13 +109,17 @@
 }
 
 .catalog__list-item--padding {
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 @include tablet {
   .catalog__list-item--padding {
     padding-bottom: 86px;
   }
+}
+
+.catalog__list-picture {
+  padding-left: 20px;
 }
 
 .catalog__subtitle {
@@ -166,6 +168,8 @@
 .catalog__list-button {
   padding: 10px;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @include tablet {
@@ -242,6 +246,8 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $border-color;
 }
 
 @include tablet {
@@ -252,7 +258,7 @@
     justify-content: center;
     width: 45%;
     margin-bottom: 60px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $border-color;
     padding-right: 0;
   }
 }
