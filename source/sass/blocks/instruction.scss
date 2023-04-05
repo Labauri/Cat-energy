@@ -11,8 +11,15 @@
   }
 }
 
+@include desktop {
+  .instruction {
+    border: none;
+  }
+}
+
 .instruction__title {
   vertical-align: top;
+  padding: 20px 0 40px 0;
 }
 
 @include tablet {

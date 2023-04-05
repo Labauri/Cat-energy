@@ -8,9 +8,10 @@
 @include tablet {
   .demo-caption {
     @include font(20px, 20px, 400);
-    width: 174px;
+    width: 100%;
     text-align: right;
     padding-top: 0;
+    padding-left: 31px;
   }
 }
 
@@ -18,29 +19,24 @@
   .demo-caption {
     display: flex;
     justify-content: flex-start;
-    white-space: nowrap;
+    width: 250px;
+    padding-left: 0;
   }
 }
 
-.demo__main-container {
+.demo__background-container {
   display: none;
 }
 
 @include tablet {
-  .demo__main-container {
+  .demo__background-container {
     display: block;
     background-color: #f2f2f2;
     width: 100%;
     height: 462px;
     position: absolute;
-    top: 265%;
+    bottom: 0;
     z-index: 0;
-  }
-}
-
-@include desktop {
-  .demo__main-container {
-    display: none;
   }
 }
 
@@ -123,9 +119,9 @@
 }
 
 @include tablet {
-  .demo__buttom--tablet {
-    background: url("/img/button-slider-tablet.svg") no-repeat center bottom;
+  .demo__button--slider {
+    background: url("img/demo-tablet-slider.svg");
     height: 512px;
-    background-color: transparent;
+    width: 40px;
   }
 }

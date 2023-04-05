@@ -30,7 +30,11 @@
 @include desktop {
   .demo__stats-wrapper {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -63,7 +67,6 @@
 @include tablet {
   .demo-stats__value {
     @include font(30px, 37px, 400);
-    font-family: "Lato", sans-serif;
   }
 }
 
@@ -87,5 +90,11 @@
     width: 125px;
     padding: 0 7px;
     background-color: #ffffff;
+  }
+}
+
+@include desktop {
+  .demo-stats__subtitle {
+    background-color: $grey-background;
   }
 }
