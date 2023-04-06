@@ -12,8 +12,8 @@
 
 @include desktop {
   .add-product {
-    padding-left: 110px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -32,7 +32,6 @@
 @include desktop {
   .add-product__list {
     border: none;
-    padding: 0 17px;
   }
 }
 
@@ -109,20 +108,24 @@
 .add-product__title {
   @include font(24px, 24px, 400);
   border-bottom: 1px solid $border-color;
+  padding-top: 25px;
   padding-bottom: 36px;
+  padding-right: 21px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 @include tablet {
   .add-product__title {
     @include font(36px, 36px, 400);
-    padding-left: 20px;
     border: none;
   }
 }
 
 @include desktop {
   .add-product__title {
-    padding-left: 0;
+    padding-left: 110px;
   }
 }
 
@@ -245,6 +248,7 @@
     margin: 0 auto;
     background-size: cover;
     height: 200px;
+    margin-bottom: 76px;
   }
 }
 
@@ -286,5 +290,7 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

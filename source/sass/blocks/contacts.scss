@@ -18,7 +18,8 @@
   .contacts__container {
     display: flex;
     justify-content: space-around;
-    padding: 70px 0;
+    padding: 59px 0;
+    background-color: $grey-background;
   }
 }
 
@@ -31,6 +32,12 @@
     left: 30px;
     top: 115px;
     padding: 50px 20px;
+  }
+}
+
+@include tablet {
+  .contacts__container--white {
+    background-color: #ffffff;
   }
 }
 

@@ -3,6 +3,7 @@
   border-bottom: 1px solid $border-color;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
 }
 
 @include tablet {
@@ -22,7 +23,7 @@
   }
 }
 
-.fields-title {
+.line-title {
   @include font(24px, 26px, 400);
   background-color: #ffffff;
   border: none;
@@ -42,7 +43,7 @@
 }
 
 @include tablet {
-  .fields-title {
+  .line-title {
     @include font(36px, 36px, 400);
     background-color: #ffffff;
     border: none;
@@ -66,7 +67,7 @@
 }
 
 @include desktop {
-  .fields-title {
+  .line-title {
     padding-top: 67px;
     padding-bottom: 76px;
 
