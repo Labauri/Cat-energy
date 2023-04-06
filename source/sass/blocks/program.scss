@@ -172,6 +172,16 @@
   }
 }
 
+.program_arrow {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: translateX(5px);
+    transition: transform 0.5s;
+  }
+}
+
 .program__link {
   display: flex;
   flex-wrap: nowrap;
@@ -179,6 +189,12 @@
   text-decoration: none;
   gap: 15px;
   padding-top: 19px;
+  transition: all 0.5s ease;
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.4s;
+  }
 }
 
 @include tablet {

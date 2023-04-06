@@ -17,4 +17,23 @@
   @include font(16px, 19px, 400);
   font-family: "Lato", sans-serif;
   color: $color-text;
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.3s;
+  }
+}
+
+.footer-container__logo {
+  transition: all 0.3s;
+
+  &:hover {
+    color: #68b738;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.3s;
+  }
 }

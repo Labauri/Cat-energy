@@ -166,6 +166,16 @@
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #5eaa2f;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @include tablet {
