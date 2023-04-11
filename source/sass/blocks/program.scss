@@ -173,28 +173,8 @@
 }
 
 .program__arrow {
-  transform: translateX(-5px);
-  transition: all 0.5s ease;
-
-  &:hover {
-    transform: translateX(0), translateX(10px);
-    transition: all 0.5s ease;
-  }
+  transition: all 0.5s;
 }
-
-.program__link,
-.program__arrow {
-  &:hover {
-    transform: translateX(0);
-    transition: all 0.5s ease;
-  }
-
-  &:focus {
-    transform: translateX(0);
-    transition: all 0.5s ease;
-  }
-}
-
 
 .program__link {
   display: flex;
@@ -203,12 +183,19 @@
   text-decoration: none;
   gap: 15px;
   padding-top: 19px;
-  transition: all 0.5s ease;
+  transition: all 0.5s;
 
-  &:hover {
-    opacity: 0.6;
-    transition: all 0.3s ease;
-  }
+    &:hover {
+      .program__arrow {
+        transform: translateX(5px);
+        transition: all 0.5s;
+
+        &:hover {
+          transform: translateX(5px);
+          transition: all 0.5s;
+        }
+      }
+    }
 
   &:active {
     opacity: 0.3;
