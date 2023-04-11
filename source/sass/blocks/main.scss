@@ -1,6 +1,6 @@
 .main__promo {
-  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background.jpg");
-  background-size: 100% 69%;
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background.jpg"), linear-gradient($color-text, $color-text);
+  background-size: auto 69%;
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;

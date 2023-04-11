@@ -73,6 +73,7 @@
   width: 100%;
   padding-right: 50px;
   outline: none;
+  transition: all 0.3s;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -81,6 +82,7 @@
 
   &:active {
     border: 1px solid $color-text;
+    stroke: $main-green-color;
     transition: all 0.3s;
   }
 
@@ -97,23 +99,10 @@
 }
 
 .fields-contacts__input,
-.fields-contacts__label,
 .fields-contacts__icon {
-  transition: all 0.3s;
-
   &:active {
-    fill: $main-green-color;
-    transition: all 0.3s;
-  }
-
-  &:focus {
-    fill: $main-green-color;
-    transition: all 0.3s;
-  }
-
-  &:focus:invalid {
-    fill: #ff8282;
-    transition: all 0.3s;
+    stroke: $main-green-color;
+    border-color: $color-text;
   }
 }
 
@@ -136,6 +125,7 @@
   padding-left: 10px;
   top: 12px;
   right: 16px;
+  stroke: $grey-catalog-text;
 }
 
 @include tablet {
