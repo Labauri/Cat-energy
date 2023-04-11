@@ -17,6 +17,7 @@
   @include font(16px, 19px, 400);
   font-family: "Lato", sans-serif;
   color: $color-text;
+  transition: all 0.3s;
 
   &:hover {
     opacity: 0.5;

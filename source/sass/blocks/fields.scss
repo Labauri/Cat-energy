@@ -50,26 +50,22 @@
     padding-top: 68px;
     padding-bottom: 76px;
     padding-right: 40px;
-    margin-left: -39px;
     padding-left: 39px;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 25%;
+      top: -5%;
       right: 0;
-      height: 3px;
-      z-index: -1;
-      width: 100%;
-      background-color: $main-green-color;
+      z-index: 1;
+
     }
   }
 }
 
 @include desktop {
   .line-title {
-    padding-top: 67px;
+    padding-top: 0;
     padding-bottom: 76px;
+    margin-left: 0;
   }
 }
 
