@@ -172,15 +172,29 @@
   }
 }
 
-.program_arrow {
+.program__arrow {
   transform: translateX(-5px);
   transition: all 0.5s ease;
 
   &:hover {
-    transform: translateX(5px);
-    transition: transform 0.5s;
+    transform: translateX(0), translateX(10px);
+    transition: all 0.5s ease;
   }
 }
+
+.program__link,
+.program__arrow {
+  &:hover {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+
+  &:focus {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+}
+
 
 .program__link {
   display: flex;
