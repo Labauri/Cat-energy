@@ -105,14 +105,55 @@
   }
 }
 
+@include tablet {
+  .fields-list__program-label {
+    padding-top: 0;
+  }
+}
+
 .fields-list__program-input:checked + .fields-list__program-label::before {
   background: url("/img/radio-button-form.svg") no-repeat center center;
+}
+
+.fields-list__program-input,
+.fields-list__program-label {
+  transition: all 0.3s;
+
+  &:hover {
+    color: $main-green-color;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+}
+
+.fields-list__add-input,
+.fields-list__add-label {
+  transition: all 0.3s;
+
+  &:hover {
+    color: $main-green-color;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
 }
 
 @include tablet {
   .fields-list__program-label {
     @include font(20px, 30px, 400);
     width: 507px;
+
+    &:active {
+      opacity: 0.5;
+      transition: all 0.3s;
+    }
   }
 }
 

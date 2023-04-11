@@ -59,6 +59,7 @@
 @include tablet {
   .fields-list__add-label {
     @include font(20px, 30px, 400);
+    padding-top: 0;
   }
 }
 

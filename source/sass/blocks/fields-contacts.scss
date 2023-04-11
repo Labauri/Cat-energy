@@ -71,11 +71,48 @@
   border: 1px solid #e6e6e6;
   width: 100%;
   padding-right: 50px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    border: 1px solid $color-text;
+    transition: all 0.3s;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    transition: all 0.3s;
+  }
 }
 
 @include tablet {
   .fields-contacts__input {
     @include font(20px, 30px, 400);
+  }
+}
+
+.fields-contacts__input,
+.fields-contacts__label,
+.fields-contacts__icon {
+  transition: all 0.3s;
+
+  &:active {
+    fill: $main-green-color;
+    transition: all 0.3s;
+  }
+
+  &:focus {
+    fill: $main-green-color;
+    transition: all 0.3s;
+  }
+
+  &:focus:invalid {
+    fill: #ff8282;
+    transition: all 0.3s;
   }
 }
 

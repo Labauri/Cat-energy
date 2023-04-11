@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 46%;
     gap: 34px;
     border: none;
@@ -115,6 +115,12 @@
 @include tablet {
   .catalog__list-item--padding {
     padding-bottom: 86px;
+  }
+}
+
+@include desktop {
+  .catalog__list-item--padding {
+    padding-bottom: 20px;
   }
 }
 
@@ -142,6 +148,16 @@
   padding: 10px;
   width: 100%;
   color: $color-text;
+
+  &:hover {
+    background-color: #ebebeb;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.3s;
+  }
 }
 
 @include tablet {
@@ -189,6 +205,7 @@
 @include desktop {
   .catalog__list-button {
     width: 168px;
+    margin-left: 0;
   }
 }
 
@@ -265,12 +282,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 45%;
     margin-bottom: 60px;
     border: 1px solid $border-color;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 65px;
     box-sizing: border-box;
   }
 }
@@ -280,7 +298,7 @@
     width: 245px;
     padding-left: 0;
     box-sizing: border-box;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 

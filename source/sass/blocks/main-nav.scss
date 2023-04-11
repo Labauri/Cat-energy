@@ -59,7 +59,6 @@
   padding-bottom: 25px;
   transition: height 0.5s, opacity 1s;
   position: relative;
-  transition: all 0.3s;
 
   &:hover {
     opacity: 0.6;
@@ -93,21 +92,13 @@
     width: 100%;
     bottom: 0;
     top: 66px;
-    background-color: #ffffff;
+    background-color: #68b738;
     z-index: 1;
   }
 }
 
-@include tablet {
-  .main-nav__list-item--current {
-    &::before {
-      background-color: #68b738;
-    }
-  }
-}
-
 @include desktop {
-  .main-nav__list-item--current {
+  .main-nav__list-item--white {
     &::before {
       background-color: #ffffff;
     }

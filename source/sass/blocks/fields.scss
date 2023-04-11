@@ -70,17 +70,6 @@
   .line-title {
     padding-top: 67px;
     padding-bottom: 76px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 25%;
-      right: 0;
-      height: 3px;
-      z-index: -1;
-      width: 100%;
-      background-color: $main-green-color;
-    }
   }
 }
 
@@ -131,6 +120,22 @@
   padding: 12px 15px;
   width: 100%;
   margin-left: 15px;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    border: 1px solid $color-text;
+    transition: all 0.3s;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    transition: all 0.3s;
+  }
 }
 
 @include tablet {
