@@ -209,10 +209,15 @@
   }
 }
 
+.catalog__list-decoration {
+  text-decoration: none;
+}
+
 .catalog__list-text {
   @include font(16px, 20px, 400);
   color: $grey-catalog-text;
   width: 76px;
+  text-decoration: none;
   text-transform: uppercase;
   margin: 0;
 }
