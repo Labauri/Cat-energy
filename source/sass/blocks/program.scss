@@ -185,17 +185,12 @@
   padding-top: 19px;
   transition: all 0.5s;
 
-    &:hover {
-      .program__arrow {
-        transform: translateX(5px);
-        transition: all 0.5s;
-
-        &:hover {
-          transform: translateX(5px);
-          transition: all 0.5s;
-        }
-      }
+  &:hover {
+    .program__arrow {
+      transform: translateX(5px);
+      transition: all 0.5s;
     }
+  }
 
   &:active {
     opacity: 0.3;

@@ -92,6 +92,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   cursor: pointer;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -102,46 +103,11 @@
     border-radius: 50%;
     top: 0;
     left: 0;
+    transition: all 0.1s;
   }
-}
-
-@include tablet {
-  .fields-list__program-label {
-    padding-top: 0;
-  }
-}
-
-.fields-list__program-input:checked + .fields-list__program-label::before {
-  background: url("/img/radio-button-form.svg") no-repeat center center;
-}
-
-.fields-list__program-input,
-.fields-list__program-label {
-  transition: all 0.3s;
 
   &:hover {
     color: $main-green-color;
-    border-color: $main-green-color;
-    transition: all 0.3s;
-  }
-
-  &:active {
-    opacity: 0.5;
-    transition: all 0.3s;
-  }
-}
-
-.fields-list__add-input,
-.fields-list__add-label {
-  transition: all 0.3s;
-
-  &:hover {
-    color: $main-green-color;
-    transition: all 0.3s;
-  }
-
-  &:active {
-    opacity: 0.5;
     transition: all 0.3s;
   }
 }
@@ -150,16 +116,26 @@
   .fields-list__program-label {
     @include font(20px, 30px, 400);
     width: 507px;
-
-    &:active {
-      opacity: 0.5;
-      transition: all 0.3s;
-    }
+    padding-top: 0;
   }
+}
+
+.fields-list__program-input:checked + .fields-list__program-label::before {
+  background: url("/img/radio-button-form.svg") no-repeat center center;
 }
 
 .fields-list__program-input {
   display: none;
+  transition: all 0.3;
+
+  &:hover + .fields-list__program-label::before {
+    border-color: $main-green-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
 }
 
 .fields-list__add-label {
@@ -171,6 +147,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   cursor: pointer;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -180,9 +157,28 @@
     height: 30px;
     top: 0;
     left: 0;
+    transition: all 0.1s;
+  }
+
+  &:hover {
+    color: $main-green-color;
+    transition: all 0.3s;
   }
 }
 
 .fields-list__add-input:checked + .fields-list__add-label::before {
   background: url("/img/checkbox-form.svg") no-repeat center center;
+}
+
+.fields-list__add-input {
+  transition: all 0.3;
+
+  &:hover + .fields-list__add-label::before {
+    border-color: $main-green-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
 }
