@@ -246,7 +246,7 @@
   background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/catalog-gift-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 100% 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,7 +258,6 @@
     margin: 0 auto;
     background-size: cover;
     height: 200px;
-    margin-bottom: 76px;
   }
 }
 
