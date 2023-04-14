@@ -9,7 +9,7 @@
   <script src="js/burger-menu.js"></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-<main class="page__body">
+<div class="page__body">
   <header class="main-header main-header__position">
     <div class="main-header__container main-header__container--width">
       <a class="main-header__logo" href="index.html">
@@ -46,9 +46,9 @@
       <ul class="catalog__list">
         <li class="catalog__list-item">
           <a href="#">
-            <picture class="catalog__list-picture">
-              <source media="(min-width: 768px)" srcset="img/tablet-product-one.png" width="161" height="172">
-              <img src="img/product-one.png" width="68" height="78" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--orange-small">
+              <source media="(min-width: 768px)" srcset="img/tablet-chicken-small@1x.png" width="161" height="172">
+              <img src="img/product-chicken-small.png" width="68" height="78" alt="Курица 500г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -75,10 +75,9 @@
           <a class="catalog__list-button button" href="#">Заказать</a>
         </li>
         <li class="catalog__list-item">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/desktop-product-two.png" width="172" height="196">
-            <source media="(min-width: 768px)" srcset="img/tablet-product-two.png" width="168" height="200">
-            <img src="img/product-two.png" width="84" height="100" alt="Продукция каталога">
+          <picture class="catalog__list-picture catalog__list-picture--orange-big">
+            <source media="(min-width: 768px)" srcset="img/tablet-chicken-big@1x.png" width="168" height="200">
+            <img src="img/product-chicken-big.png" width="84" height="100" alt="Курица 1000г">
           </picture>
           <div class="catalog__list-container">
             <a class="catalog__list-decoration" href="#">
@@ -105,9 +104,9 @@
         </li>
         <li class="catalog__list-item">
           <a class="catalog__list-decoration" href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/tablet-product-three.png" width="161" height="172">
-              <img src="img/tablet-product-three.png" width="68" height="78" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--green-small">
+              <source media="(min-width: 768px)" srcset="img/tablet-fish-small@1x.png" width="161" height="172">
+              <img src="img/product-fish-small.png" width="68" height="78" alt="Рыба 500г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -135,10 +134,9 @@
         </li>
         <li class="catalog__list-item">
           <a class="catalog__list-decoration" href="#">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/desktop-product-four.png" width="172" height="196">
-              <source media="(min-width: 768px)" srcset="img/tablet-product-four.png" width="168" height="200">
-              <img src="img/product-four.png" width="84" height="100" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--green-big">
+              <source media="(min-width: 768px)" srcset="img/tablet-fish-big@1x.png" width="168" height="200">
+              <img src="img/product-fish-big.png" width="84" height="100" alt="Рыба 1000г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -166,9 +164,9 @@
         </li>
         <li class="catalog__list-item">
           <a href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/tablet-product-five.png" width="161" height="172">
-              <img src="img/product-five.png" width="68" height="78" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--blue-small">
+              <source media="(min-width: 768px)" srcset="img/tablet-buckwheat-small@1x.png" width="161" height="172">
+              <img src="img/product-buckwheat-small.png" width="68" height="78" alt="Гречка 500г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -196,10 +194,9 @@
         </li>
         <li class="catalog__list-item">
           <a href="#">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/desktop-product-six.png" width="168" height="200">
-              <source media="(min-width: 768px)" srcset="img/tablet-product-six.png" width="172" height="196">
-              <img src="img/product-six.png" width="84" height="100" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--blue-big">
+              <source media="(min-width: 768px)" srcset="img/tablet-buckwheat-big@1x.png" width="168" height="200">
+              <img src="img/product-buckwheat-big.png" width="84" height="100" alt="Гречка 1000г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -227,9 +224,9 @@
         </li>
         <li class="catalog__list-item catalog__list-item--padding">
           <a href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/tablet-product-seven.png" width="161" height="172">
-              <img src="img/product-seven.png" width="72" height="84" alt="Продукция каталога">
+            <picture class="catalog__list-picture catalog__list-picture--violet-small">
+              <source media="(min-width: 768px)" srcset="img/tablet-rice-small@1x.png" width="161" height="172">
+              <img src="img/product-rice-small.png" width="72" height="84" alt="Рис 500г">
             </picture>
           </a>
           <div class="catalog__list-container">
@@ -344,8 +341,6 @@
         </div>
       </div>
     </section>
-    </div>
-    </div>
     <div class="map" id="map">
       <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ce5e59beeaad92a430c0a1f580c103606c84bb01859606abf5e28c924734dc4&amp;source=constructor" width="100%" height="362"></iframe>
     </div>
@@ -417,5 +412,6 @@
       </a>
     </div>
   </footer>
+</div>
 </body>
 </html>
