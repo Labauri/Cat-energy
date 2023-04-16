@@ -258,6 +258,12 @@
     margin: 0 auto;
     background-size: cover;
     height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/catalog-gift-background@2x.png") no-repeat;
+      background-position: 100% 60%;
+      background-size: cover;
+    }
   }
 }
 
