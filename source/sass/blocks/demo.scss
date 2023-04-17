@@ -73,7 +73,7 @@
 }
 
 @include tablet {
-  .demo-caption {
+  .demo__caption {
     @include font(20px, 20px, 400);
   }
 }

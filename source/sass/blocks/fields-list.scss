@@ -46,13 +46,13 @@
   }
 }
 
-.fields-list__program {
+.fields-list--program {
   padding-left: 20px;
   padding-top: 22px;
 }
 
 @include tablet {
-  .fields-list__program {
+  .fields-list--program {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -63,7 +63,7 @@
 }
 
 @include desktop {
-  .fields-list__program {
+  .fields-list--program {
     padding-bottom: 15px;
     padding-top: 15px;
   }
@@ -98,8 +98,8 @@
     content: "";
     position: absolute;
     border: 1px solid $border-color;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     top: 0;
     left: 0;
@@ -153,8 +153,8 @@
     content: "";
     position: absolute;
     border: 1px solid $border-color;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     top: 0;
     left: 0;
     transition: all 0.1s;

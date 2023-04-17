@@ -1,4 +1,4 @@
-.demo-caption {
+.demo__caption {
   @include font(14px, 20px, 400);
   text-align: center;
   text-transform: uppercase;
@@ -6,7 +6,7 @@
 }
 
 @include tablet {
-  .demo-caption {
+  .demo__caption {
     @include font(20px, 20px, 400);
     width: 100%;
     text-align: right;
@@ -16,7 +16,7 @@
 }
 
 @include desktop {
-  .demo-caption {
+  .demo__caption {
     display: flex;
     justify-content: flex-start;
     width: 250px;
@@ -40,7 +40,7 @@
   }
 }
 
-.demo-caption__container {
+.demo__caption-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -48,7 +48,7 @@
 }
 
 @include tablet {
-  .demo-caption__container {
+  .demo__caption-container {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 0;

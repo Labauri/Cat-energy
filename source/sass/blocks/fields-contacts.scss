@@ -82,8 +82,12 @@
 
   &:active {
     border: 1px solid $color-text;
-    stroke: $main-green-color;
     transition: all 0.3s;
+
+    .fields-contacts__icon {
+      stroke: $main-green-color;
+      transition: all 0.3s;
+    }
   }
 
   &:focus:invalid {
@@ -95,14 +99,6 @@
 @include tablet {
   .fields-contacts__input {
     @include font(20px, 30px, 400);
-  }
-}
-
-.fields-contacts__input,
-.fields-contacts__icon {
-  &:active {
-    stroke: $main-green-color;
-    border-color: $color-text;
   }
 }
 
