@@ -57,13 +57,13 @@
 }
 
 @include desktop {
-  .main-header__position {
+  .main-header--position {
     position: static;
   }
 }
 
 @include desktop {
-  .main-header__position-form {
+  .main-header--position-form {
     position: static;
   }
 }

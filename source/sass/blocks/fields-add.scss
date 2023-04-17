@@ -9,13 +9,13 @@
 }
 
 @include tablet {
-  .fields-title--padding {
+  .fields-add__title--padding {
     padding-bottom: 0;
   }
 }
 
 @include desktop {
-  .fields-title--padding {
+  .fields-add__title--padding {
     padding-bottom: 0;
   }
 }
