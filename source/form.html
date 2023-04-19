@@ -13,6 +13,14 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
+  <div style="display: none;">
+    <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" id="icon-email" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" id="icon-phone" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
   <header class="main-header main-header--position-form">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
@@ -85,15 +93,15 @@
           <div class="fields-contacts__block">
             <label class="fields-contacts__label" for="email">E-mail:*</label>
             <input class="fields-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-            <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="fields-contacts__icon" width="20" height="20">
+              <use xlink:href="#icon-email"></use>
             </svg>
           </div>
           <div class="fields-contacts__block">
             <label class="fields-contacts__label" for="phone">Телефон:*</label>
             <input class="fields-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-            <svg class="fields-contacts__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="fields-contacts__icon" width="20" height="20">
+              <use xlink:href="#icon-phone"></use>
             </svg>
           </div>
         </fieldset>
@@ -193,7 +201,7 @@
       </li>
     </ul>
     <div class="footer-container">
-      <span class="footer-container__text">HTML Academy</span>
+      <a class="footer-container__text" href="https://web.telegram.org/k/#@htmlacademy">HTML Academy</a>
       <a class="footer-container__logo" href="https://web.telegram.org/k/#@htmlacademy">
         <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_25_330)">

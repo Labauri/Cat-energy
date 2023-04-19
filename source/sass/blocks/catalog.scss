@@ -148,15 +148,16 @@
   padding: 10px;
   width: 100%;
   color: $color-text;
+  transition: all 0.2s;
 
   &:hover {
     background-color: #ebebeb;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }
 
@@ -182,11 +183,11 @@
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.2s;
 
   &:hover {
     background-color: #5eaa2f;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {

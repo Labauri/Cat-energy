@@ -98,17 +98,16 @@
     content: "";
     position: absolute;
     border: 1px solid $border-color;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     top: 0;
     left: 0;
     transition: all 0.1s;
   }
 
-  &:hover {
-    color: $main-green-color;
-    transition: all 0.3s;
+  &:active {
+    color: #bababa;
   }
 }
 
@@ -126,15 +125,15 @@
 
 .fields-list__program-input {
   display: none;
-  transition: all 0.3;
+  transition: all 0.2s;
 
   &:hover + .fields-list__program-label::before {
     border-color: $main-green-color;
   }
 
-  &:active {
-    opacity: 0.5;
-    transition: all 0.3s;
+  &:active + .fields-list__program-label::before {
+    border-color: #bababa;
+    transition: all 0.2s;
   }
 }
 
@@ -147,7 +146,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &::before {
     content: "";
@@ -160,9 +159,8 @@
     transition: all 0.1s;
   }
 
-  &:hover {
-    color: $main-green-color;
-    transition: all 0.3s;
+  &:active {
+    color: #bababa;
   }
 }
 
@@ -171,14 +169,14 @@
 }
 
 .fields-list__add-input {
-  transition: all 0.3;
+  transition: all 0.2;
 
   &:hover + .fields-list__add-label::before {
     border-color: $main-green-color;
   }
 
-  &:active {
-    opacity: 0.5;
-    transition: all 0.3s;
+  &:active + .fields-list__add-label::before {
+    border-color: #bababa;
+    transition: all 0.2s;
   }
 }

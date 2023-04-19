@@ -17,30 +17,31 @@
   @include font(16px, 19px, 400);
   font-family: "Lato", sans-serif;
   color: $color-text;
-  transition: all 0.3s;
+  transition: all 0.2s;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.5;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }
 
 .footer-container__logo {
   fill: #666666;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &:hover {
     fill: #68b738;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }

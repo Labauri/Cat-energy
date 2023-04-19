@@ -29,16 +29,16 @@
   border-bottom: 1px solid #d9d9d9;
   padding-top: 20px;
   padding-bottom: 20px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &:hover {
     fill: #3e3e3e;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     opacity: #6b6b6b;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }
 
@@ -71,15 +71,15 @@
 
 .footer__list-icon {
   fill: $special-grey;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &:hover {
     fill: #68b738;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
-    opacity: 0.5s;
-    transition: all 0.3s;
+    opacity: 0.3s;
+    transition: all 0.2s;
   }
 }

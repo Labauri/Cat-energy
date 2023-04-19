@@ -73,26 +73,37 @@
   width: 100%;
   padding-right: 50px;
   outline: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &:hover {
     border: 1px solid #cdcdcd;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
-    border: 1px solid $color-text;
-    transition: all 0.3s;
-
     .fields-contacts__icon {
       stroke: $main-green-color;
-      transition: all 0.3s;
+      transition: all 0.2s;
+      border: 1px solid $color-text;
+    }
+  }
+
+  &:focus {
+    .fields-contacts__icon {
+      stroke: $main-green-color;
+      transition: all 0.2s;
+      border: 1px solid $color-text;
     }
   }
 
   &:focus:invalid {
     border: 1px solid #ff8282;
-    transition: all 0.3s;
+    transition: all 0.2s;
+
+    .fields-contacts__icon {
+      stroke: #ff8282;
+      transition: all 0.2s;
+    }
   }
 }
 
@@ -122,6 +133,7 @@
   top: 12px;
   right: 16px;
   stroke: $grey-catalog-text;
+  fill: #ffffff;
 }
 
 @include tablet {
