@@ -9,12 +9,20 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <script src="js/burger-menu.js"></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
+  <div style="display: none;">
+    <svg class="program__arrow" id="icon-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+      <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+    </svg>
+    <svg class="program__arrow" id="icon-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+      <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+    </svg>
+  </div>
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
@@ -62,9 +70,8 @@
             <p class="program__text program__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="catalog.html" class="program__link">
               <span class="program__link-catalog">Каталог Slim</span>
-              <svg class="program__arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+              <svg class="program__arrow" width="32" height="12">
+                <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
           </li>
@@ -74,9 +81,8 @@
             <p class="program__text program__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a href="catalog.html" class="program__link">
               <span class="program__link-catalog">Каталог Pro</span>
-              <svg class="program__arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+              <svg class="program__arrow" width="32" height="12">
+                <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
           </li>

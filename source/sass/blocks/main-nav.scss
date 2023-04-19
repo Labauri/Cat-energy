@@ -57,17 +57,17 @@
   text-align: center;
   padding-top: 22px;
   padding-bottom: 25px;
-  transition: height 0.5s, opacity 1s;
+  transition: height 0.5s, opacity 0.2s;
   position: relative;
 
   &:hover {
     opacity: 0.6;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }
 

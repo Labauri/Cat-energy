@@ -117,21 +117,21 @@
   padding: 12px 15px;
   width: 100%;
   margin-left: 15px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   &:hover {
     border: 1px solid #cdcdcd;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:active {
     border: 1px solid $color-text;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
   &:focus:invalid {
     border: 1px solid #ff8282;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 }
 
