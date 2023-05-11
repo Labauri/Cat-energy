@@ -32,6 +32,16 @@
   width: 187px;
   padding-right: 14px;
   padding-top: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    height: 3px;
+    z-index: 1;
+    width: 100%;
+    background-color: $main-green-color;
+  }
 }
 
 @include tablet {
@@ -39,6 +49,12 @@
     width: 512px;
     padding-right: 42px;
     padding-top: 70px;
+  }
+
+  &::before {
+    top: -5%;
+    right: 0;
+    z-index: 1;
   }
 }
 
@@ -48,6 +64,12 @@
     background-color: #ffffff;
     margin-left: -40px;
     padding-bottom: 75px;
+  }
+
+  &::before {
+    top: 59px;
+    right: 0;
+    z-index: 1;
   }
 }
 

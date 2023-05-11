@@ -30,16 +30,6 @@
   padding-top: 25px;
   padding-bottom: 35px;
   padding-right: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 38px;
-    height: 3px;
-    z-index: -1;
-    width: 100%;
-    background-color: $main-green-color;
-  }
 }
 
 @include tablet {
@@ -51,12 +41,6 @@
     padding-bottom: 76px;
     padding-right: 40px;
     padding-left: 39px;
-
-    &::before {
-      top: -5%;
-      right: 0;
-      z-index: 1;
-    }
   }
 }
 

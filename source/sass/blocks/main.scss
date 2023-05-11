@@ -1,5 +1,5 @@
 .main__promo {
-  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("/img/index-background.jpg"), linear-gradient($color-text, $color-text);
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/index-background.jpg"), linear-gradient($color-text, $color-text);
   background-size: auto 69%;
   background-position: center top;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 @include tablet {
   .main__promo {
-    background: url("/img/index-cat-tablet.png") no-repeat;
+    background: url("../img/index-cat-tablet.png") no-repeat;
     background-position: center 217px;
     margin: 0;
     padding-bottom: 520px;
@@ -24,7 +24,7 @@
 
 @include desktop {
   .main__promo {
-    background: url("/img/index-cat-desktop.png") no-repeat 550px center;
+    background: url("../img/index-cat-desktop.png") no-repeat 550px center;
     position: relative;
     padding-bottom: 300px;
     padding-top: 160px;

@@ -19,9 +19,37 @@
   }
 }
 
+.fields-comment__title {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    height: 3px;
+    z-index: 1;
+    width: 100%;
+    background-color: $main-green-color;
+  }
+}
+
+@include tablet {
+  .fields-comment__title {
+    &::before {
+      top: -5%;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+
 @include desktop {
   .fields-comment__title {
     padding-bottom: 76px;
+  }
+
+  &::before {
+    top: 59px;
+    right: 0;
+    z-index: 1;
   }
 }
 
