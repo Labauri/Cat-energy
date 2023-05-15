@@ -1,23 +1,15 @@
 .fields-add__title {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    height: 3px;
-    z-index: 1;
-    width: 100%;
-    left: 190px;
-    background-color: $main-green-color;
-  }
+  margin-bottom: 30px;
+  background-color: #ffffff;
 }
 
 @include tablet {
   .fields-add__title {
-    &::before {
-      top: 20px;
-      left: 320px;
-      z-index: 1;
-    }
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-bottom: 0;
   }
 }
 
@@ -25,15 +17,7 @@
   .fields-add__title {
     background-color: #ffffff;
     margin-left: -40px;
-    padding: 40px 40px 75px;
-    z-index: 1;
-
-    &::before {
-      top: 59px;
-      right: 0;
-      left: 0;
-      z-index: -1;
-    }
+    padding: 10px 40px 75px;
   }
 }
 
@@ -45,7 +29,7 @@
 
 @include desktop {
   .fields-add__title--padding {
-    padding-bottom: 0;
+    padding-bottom: 76px;
   }
 }
 

@@ -20,25 +20,17 @@
 }
 
 .fields-comment__title {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    height: 3px;
-    z-index: 1;
-    width: 100%;
-    left: 170px;
-    background-color: $main-green-color;
-  }
+  margin-bottom: 30px;
+  background-color: #ffffff;
 }
 
 @include tablet {
   .fields-comment__title {
-    &::before {
-      top: 21px;
-      left: 290px;
-      z-index: 1;
-    }
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-bottom: 0;
   }
 }
 
@@ -47,13 +39,6 @@
     background-color: #ffffff;
     margin-left: -40px;
     padding: 40px 40px 75px;
-
-    &::before {
-      top: 59px;
-      right: 0;
-      left: 0;
-      z-index: -1;
-    }
   }
 }
 
