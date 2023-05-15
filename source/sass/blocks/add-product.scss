@@ -114,18 +114,45 @@
   margin: 0;
   position: relative;
   z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    height: 3px;
+    z-index: 1;
+    width: 100%;
+    left: 250px;
+    background-color: $main-green-color;
+  }
 }
 
 @include tablet {
   .add-product__title {
     @include font(36px, 36px, 400);
     border: none;
+
+    &::before {
+      top: 47px;
+      left: 370px;
+      right: 0;
+      z-index: 1;
+    }
   }
 }
 
 @include desktop {
   .add-product__title {
     padding-left: 110px;
+    width: 100%;
+    background-color: #ffffff;
+
+    &::before {
+      top: 46px;
+      right: 0;
+      left: 490px;
+      z-index: -1;
+    }
   }
 }
 

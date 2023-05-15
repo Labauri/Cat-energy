@@ -36,10 +36,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 38px;
+    top: 41px;
     height: 3px;
     z-index: 1;
     width: 100%;
+    left: 230px;
     background-color: $main-green-color;
   }
 }
@@ -47,14 +48,16 @@
 @include tablet {
   .fields-contacts__title {
     width: 512px;
-    padding-right: 42px;
     padding-top: 70px;
-  }
 
-  &::before {
-    top: -5%;
-    right: 0;
-    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 615px;
+      z-index: 1;
+      right: 0;
+    }
   }
 }
 
@@ -64,12 +67,15 @@
     background-color: #ffffff;
     margin-left: -40px;
     padding-bottom: 75px;
-  }
 
-  &::before {
-    top: 59px;
-    right: 0;
-    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 59px;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 

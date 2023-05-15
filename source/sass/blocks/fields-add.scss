@@ -1,10 +1,39 @@
 .fields-add__title {
-  width: 141px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    height: 3px;
+    z-index: 1;
+    width: 100%;
+    left: 190px;
+    background-color: $main-green-color;
+  }
 }
 
 @include tablet {
   .fields-add__title {
-    width: 211px;
+    &::before {
+      top: 20px;
+      left: 320px;
+      z-index: 1;
+    }
+  }
+}
+
+@include desktop {
+  .fields-add__title {
+    background-color: #fff;
+    margin-left: -40px;
+    padding: 40px 40px 75px;
+    z-index: 1;
+
+    &::before {
+      top: 59px;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 

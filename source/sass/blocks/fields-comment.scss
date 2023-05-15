@@ -23,10 +23,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 38px;
+    top: 14px;
     height: 3px;
     z-index: 1;
     width: 100%;
+    left: 170px;
     background-color: $main-green-color;
   }
 }
@@ -34,8 +35,8 @@
 @include tablet {
   .fields-comment__title {
     &::before {
-      top: -5%;
-      right: 0;
+      top: 21px;
+      left: 290px;
       z-index: 1;
     }
   }
@@ -43,13 +44,16 @@
 
 @include desktop {
   .fields-comment__title {
-    padding-bottom: 76px;
-  }
+    background-color: #fff;
+    margin-left: -40px;
+    padding: 40px 40px 75px;
 
-  &::before {
-    top: 59px;
-    right: 0;
-    z-index: 1;
+    &::before {
+      top: 59px;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 
