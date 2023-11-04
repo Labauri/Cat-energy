@@ -19,9 +19,26 @@
   }
 }
 
+.fields-comment__title {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+@include tablet {
+  .fields-comment__title {
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-bottom: 0;
+  }
+}
+
 @include desktop {
   .fields-comment__title {
-    padding-bottom: 76px;
+    background-color: #ffffff;
+    margin-left: -40px;
+    padding: 40px 40px 75px;
   }
 }
 
